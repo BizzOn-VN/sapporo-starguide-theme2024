@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('SVN-GothamMedium.eot');
+    src: url('SVN-GothamMedium.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamMedium.woff2') format('woff2'),
+        url('SVN-GothamMedium.woff') format('woff'),
+        url('SVN-GothamMedium.ttf') format('truetype'),
+        url('SVN-GothamMedium.svg#SVN-GothamMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

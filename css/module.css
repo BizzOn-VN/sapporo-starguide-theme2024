@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* module css 01
  -----------------------------------------------------*/
+.oveflow-hidden {
+  overflow: hidden;
+}
+
 .h-container {
   width: 75%;
   margin: 0 auto;
@@ -28,7 +32,7 @@
 }
 
 .Poppins-Bold-font {
-  font-family: "Poppins-Bold", sans-serif;
+  font-family: "SVN-Poppins-Bold", sans-serif;
 }
 
 .font-size-40 {
@@ -139,6 +143,16 @@
   line-height: 1.2em;
   padding: 0.2rem 0.5rem 0.3rem 0.5rem;
   background: #f4aa1c;
+}
+.smd-more a:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .smd-more a {

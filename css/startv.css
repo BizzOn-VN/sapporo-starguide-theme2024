@@ -309,12 +309,11 @@
   max-width: 100%;
   display: table;
   margin: 0 auto;
-  padding: 0.7vw 0px 0px 0px;
-  min-height: 3vw;
+  padding: 0.7vw 0px 0px 2vw;
+  min-height: 2.5vw;
   border: none;
   border-radius: 6px;
   text-align: left;
-  padding-left: 30px;
   position: relative;
   font-family: "UTMBebas";
 }

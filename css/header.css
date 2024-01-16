@@ -98,6 +98,9 @@
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+  .page-header {
+    padding: 3vw 0px;
+  }
   .page-header .meta-right #open-sapporo-nav {
     width: 11.5%;
   }
@@ -179,6 +182,12 @@
     background: rgba(0, 0, 0, 0.4);
     font-size: -webkit-calc(1.3vw + 7px);
     font-size: calc(1.3vw + 7px);
+    z-index: 0;
+    visibility: hidden;
+  }
+  .main-nav.active-menu {
+    z-index: 100;
+    visibility: visible;
   }
   .main-nav ul.menu {
     display: -webkit-inline-box;

@@ -361,6 +361,12 @@
   font-size: 1.6vw;
   line-height: 1.2em;
 }
+.home-blk3 .bottom-meta .form form .submit:hover {
+  color: #000;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
 @media screen and (max-width: 768px) {
   .home-blk3 {
     background: url(../images/bg-star-mb.jpg) no-repeat center;

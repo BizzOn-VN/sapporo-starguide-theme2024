@@ -16,12 +16,16 @@
   src: url(../fonts/SVN-GothamBold/SVN-GothamBold.woff2) format("woff2"), url(../fonts/SVN-GothamBold/SVN-GothamBold.eot) format("eot"), url(../fonts/SVN-GothamBold/SVN-GothamBold.ttf) format("ttf"), url(../fonts/SVN-GothamBold/SVN-GothamBold.woff) format("woff");
 }
 @font-face {
+  font-family: "SVN-GothamMedium";
+  src: url(../fonts/SVN-GothamMedium/SVN-GothamMedium.woff2) format("woff2"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.eot) format("eot"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.ttf) format("ttf"), url(../fonts/SVN-GothamMedium/SVN-GothamMedium.woff) format("woff");
+}
+@font-face {
   font-family: "SVN-GothamBook";
   src: url(../fonts/SVN-GothamBook/SVN-GothamBook.woff2) format("woff2"), url(../fonts/SVN-GothamBook/SVN-GothamBook.eot) format("eot"), url(../fonts/SVN-GothamBook/SVN-GothamBook.ttf) format("ttf"), url(../fonts/SVN-GothamBook/SVN-GothamBook.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins-Bold";
-  src: url(../fonts/Poppins-Bold/Poppins-Bold.woff2) format("woff2"), url(../fonts/Poppins-Bold/Poppins-Bold.eot) format("eot"), url(../fonts/Poppins-Bold/Poppins-Bold.ttf) format("ttf"), url(../fonts/Poppins-Bold/Poppins-Bold.woff) format("woff");
+  font-family: "SVN-Poppins-Bold";
+  src: url(../fonts/Poppins-Bold/SVN-Poppins-Bold.woff2) format("woff2"), url(../fonts/SVN-Poppins-Bold/SVN-Poppins-Bold.eot) format("eot"), url(../fonts/SVN-Poppins-Bold/SVN-Poppins-Bold.ttf) format("ttf"), url(../fonts/SVN-Poppins-Bold/SVN-Poppins-Bold.woff) format("woff");
 }
 * {
   outline: transparent;
@@ -46,14 +50,14 @@ body {
 }
 
 a {
-  color: #0bb4b7;
+  color: #000;
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
 a:hover {
   text-decoration: none;
-  color: #0bb4b7;
+  color: #f6aa1b;
 }
 a:focus {
   outline: none;
@@ -94,6 +98,10 @@ input[type=submit] {
 
 /* module css 01
  -----------------------------------------------------*/
+.oveflow-hidden {
+  overflow: hidden;
+}
+
 .h-container {
   width: 75%;
   margin: 0 auto;
@@ -121,7 +129,7 @@ input[type=submit] {
 }
 
 .Poppins-Bold-font {
-  font-family: "Poppins-Bold", sans-serif;
+  font-family: "SVN-Poppins-Bold", sans-serif;
 }
 
 .font-size-40 {
@@ -232,6 +240,16 @@ input[type=submit] {
   line-height: 1.2em;
   padding: 0.2rem 0.5rem 0.3rem 0.5rem;
   background: #f4aa1c;
+}
+.smd-more a:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .smd-more a {
@@ -3033,6 +3051,9 @@ video::-webkit-media-controls-overlay-play-button {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+  .page-header {
+    padding: 3vw 0px;
+  }
   .page-header .meta-right #open-sapporo-nav {
     width: 11.5%;
   }
@@ -3114,6 +3135,12 @@ video::-webkit-media-controls-overlay-play-button {
     background: rgba(0, 0, 0, 0.4);
     font-size: -webkit-calc(1.3vw + 7px);
     font-size: calc(1.3vw + 7px);
+    z-index: 0;
+    visibility: hidden;
+  }
+  .main-nav.active-menu {
+    z-index: 100;
+    visibility: visible;
   }
   .main-nav ul.menu {
     display: -webkit-inline-box;
@@ -3711,6 +3738,12 @@ video::-webkit-media-controls-overlay-play-button {
   font-size: 1.6vw;
   line-height: 1.2em;
 }
+.home-blk3 .bottom-meta .form form .submit:hover {
+  color: #000;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
 @media screen and (max-width: 768px) {
   .home-blk3 {
     background: url(../images/bg-star-mb.jpg) no-repeat center;
@@ -4145,12 +4178,11 @@ video::-webkit-media-controls-overlay-play-button {
   max-width: 100%;
   display: table;
   margin: 0 auto;
-  padding: 0.7vw 0px 0px 0px;
-  min-height: 3vw;
+  padding: 0.7vw 0px 0px 2vw;
+  min-height: 2.5vw;
   border: none;
   border-radius: 6px;
   text-align: left;
-  padding-left: 30px;
   position: relative;
   font-family: "UTMBebas";
 }
