@@ -1,0 +1,473 @@
+.home-blk-6 {
+  position: relative;
+  z-index: 2;
+  padding: 0.5vw 0 3vw;
+  background: #2a2a2a;
+}
+.home-blk-6 .smd-line {
+  margin-bottom: 1vw;
+}
+.home-blk-6 .smd-line:before {
+  top: 58%;
+}
+.home-blk-6 .left-ct {
+  width: 66.5%;
+  margin-right: 1%;
+  display: inline-block;
+  float: left;
+}
+.home-blk-6 .main-star-tv-home {
+  float: left;
+  width: 32.5%;
+  display: inline-block;
+}
+.home-blk-6 .smd-show-more {
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  .home-blk-6 {
+    padding: 3% 0px 4%;
+  }
+  .home-blk-6 .h-container {
+    width: 100%;
+  }
+  .home-blk-6 .smd-line {
+    margin-bottom: 4%;
+    padding-left: 6%;
+  }
+  .home-blk-6 .smd-line .img {
+    width: 29%;
+  }
+  .home-blk-6 .smd-line:before {
+    width: 38%;
+    left: 36%;
+    background: #848484;
+  }
+  .home-blk-6 .left-ct {
+    width: 100%;
+  }
+  .home-blk-6 .main-star-tv-home {
+    width: 100%;
+  }
+}
+
+.main-star-tv-home {
+  background: url(../images/bg-ft.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+}
+
+.main-star-tv-home:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.sapporo-header-image {
+  position: relative;
+}
+
+.sapporo-header-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.headline_star_tv {
+  background: #ffe9b6;
+  display: table;
+  width: 100%;
+}
+
+.headline_star_tv .blk-inner {
+  display: table;
+  margin: 0 auto;
+}
+
+.headline_star_tv .img-icon {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.headline_star_tv .text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 50px;
+}
+
+.headline_star_tv .text .title {
+  font-size: 83px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-family: "UTM Bebas";
+  color: #de8b36;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .headline_star_tv .text {
+    padding-left: 27px;
+  }
+  .headline_star_tv .text .title {
+    font-size: 60px;
+  }
+  .name-lchk {
+    font-size: 14.5px;
+  }
+  .list-header-img {
+    width: 130px;
+  }
+  .headline_star_tv {
+    padding: 10px 10px;
+  }
+}
+.hytPlayerWrap {
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.hytPlayerWrap iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.block-three-videos {
+  margin-bottom: 55px;
+}
+.block-three-videos .thumb-nail {
+  margin: 0px 0px 0vw;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+}
+.block-three-videos .thumb-nail:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+       -o-transition: all 0.8s;
+          transition: all 0.8s;
+}
+
+.block-three-videos .blk-col.active .thumb-nail:before {
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.block-three-videos .thumb-nail:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.block-three-videos .thumb-nail img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.block-three-videos .blk-select {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-three-videos {
+    padding: 0px 1.5vw;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .block-three-videos .blk-col {
+    width: 50%;
+    margin-bottom: 0.5vw;
+    padding: 0 1vw;
+  }
+  .block-three-videos .smd-show-more {
+    display: table;
+    margin: 0.8vw auto 0 auto;
+  }
+  .block-three-videos .smd-show-more a {
+    color: #FFF;
+  }
+  .block-three-videos .smd-show-more a:before {
+    background: url(../images/arrow-white.png) no-repeat center center;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+  }
+}
+.block-three-videos .ui.dropdown > .text span {
+  line-height: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: -webkit-calc(100% - 15px);
+  max-width: calc(100% - 15px);
+}
+
+.block-three-videos .ui.dropdown .menu .selected.item {
+  background: #ffc60f;
+}
+
+.blk-select .ui.selection.dropdown .menu > .item {
+  text-align: center;
+  background: #ffffff;
+  font-size: 18px;
+}
+.blk-select .ui.selection.dropdown .menu > .item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.blk-select .ui.selection.dropdown > .dropdown.icon {
+  line-height: 1em;
+  left: 2%;
+  right: auto;
+}
+.blk-select .ui.dropdown > .text {
+  font-size: 18px;
+  display: block;
+}
+.blk-select .ui.dropdown .menu .selected.item span {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  min-width: 50%;
+  max-width: -webkit-calc(100% - 0px);
+  max-width: calc(100% - 0px);
+  padding: 0px 22px;
+}
+.blk-select .ui.dropdown .menu .selected.item span:before {
+  content: "";
+  width: 20px;
+  height: 15px;
+  display: block;
+  background: url(../images/icon-tick-gray.png) no-repeat center center;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0px;
+}
+.blk-select .ui.selection.dropdown .menu > .item {
+  padding: 0.78571429rem 15px !important;
+}
+.blk-select .ui.upward.selection.dropdown .menu {
+  border: none;
+}
+.blk-select .ui.dropdown > .dropdown.icon:before {
+  font-size: -webkit-calc(0.8vw + 4px);
+  font-size: calc(0.8vw + 4px);
+}
+.blk-select .ui.selection.dropdown {
+  background: #f4aa1c;
+  min-width: 100px;
+  width: 100%;
+  max-width: 100%;
+  display: table;
+  margin: 0 auto;
+  padding: 0.7vw 0px 0px 0px;
+  min-height: 3vw;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  padding-left: 30px;
+  position: relative;
+  font-family: "UTMBebas";
+}
+.blk-select .blk-col.active .ui.selection.dropdown {
+  display: block;
+}
+.blk-select .ui.dropdown:not(.button) > .default.text {
+  font-size: 1.2rem;
+  color: #464646;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .blk-select {
+    margin-bottom: 1.3vw;
+  }
+  .blk-select .ui.selection.dropdown > .dropdown.icon {
+    line-height: 1.3em;
+  }
+  .blk-select .ui.selection.dropdown > .dropdown.icon .menu {
+    display: none !important;
+  }
+  .blk-select .ui.selection.dropdown {
+    overflow: hidden;
+    padding: 2vw 0px 0px 0px;
+    border-radius: 0px;
+    width: 95%;
+  }
+  .blk-select .ui.selection.dropdown .menu {
+    margin-top: 3vw;
+    border-radius: 0px;
+  }
+  .blk-select .ui.selection.dropdown .text {
+    padding-left: 6vw;
+  }
+  .blk-select .ui.selection.dropdown .default.text {
+    padding-left: 6vw;
+    font-size: -webkit-calc(3vw + 10px);
+    font-size: calc(3vw + 10px);
+  }
+  .blk-select .ui.dropdown .menu .selected.item span {
+    padding: 0px;
+  }
+  .blk-select .ui.selection.dropdown .menu {
+    -webkit-animation: none !important;
+         -o-animation: none !important;
+            animation: none !important;
+    max-height: 9.01428571rem;
+    display: block !important;
+    visibility: visible;
+    position: initial !important;
+    height: auto !important;
+    top: 0px;
+    left: 0px;
+    padding: 0.5vw 0px 3vw 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blk-select .ui.selection.dropdown .menu .item {
+    text-align: left;
+    font-size: 2vw;
+    font-size: -webkit-calc(2.5vw + 7px);
+    font-size: calc(2.5vw + 7px);
+    padding: 1vw 2vw 1vw 6vw !important;
+  }
+}
+
+.block-three-videos .blk-col {
+  margin-bottom: 0.6vw;
+}
+
+@media screen and (max-width: 768px) {
+  .block-three-videos .thumb-nail {
+    margin: 0px 0px 0px;
+  }
+  .block-three-videos .ui.selection.dropdown {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+.video-star-tv {
+  opacity: 0;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .video-star-tv {
+    margin-bottom: 1.3vw;
+  }
+}
+
+.video-star-tv.active-video {
+  opacity: 1;
+  position: relative;
+  height: auto;
+  overflow: inherit;
+  visibility: visible;
+}
+
+.delivery-icon-star-tv {
+  position: relative;
+  display: inline-block;
+  right: 0px;
+  width: 180px;
+  margin: 0 auto 0px auto;
+  bottom: 0px;
+}
+
+.hytPlayerWrap {
+  position: relative;
+  z-index: 20000;
+}
+
+.hytPlayerWrap.ended:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 43px);
+  height: calc(100% - 43px);
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 70px 70px;
+          background-size: 70px 70px;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/pointed-edge-web-navigation/107/redo-512.png");
+}
+
+.hytPlayerWrap.paused:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: -webkit-calc(100% - 43px);
+  height: calc(100% - 43px);
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 70px 70px;
+          background-size: 70px 70px;
+  background-image: url("https://i.ya-webdesign.com/images/play-button-png-16.png");
+}
+
+.delivery-icon a {
+  display: inline-block;
+}

@@ -1,0 +1,96 @@
+/* footer
+ -----------------------------------------------------*/
+.page-footer {
+  background: #ebaf3e;
+  padding: 2rem 0px 1.5rem;
+}
+.page-footer .fl-left {
+  width: 65%;
+}
+.page-footer .fl-right {
+  width: 32%;
+}
+.page-footer .top-ct {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer .top-ct h4.caption {
+  font-size: 2vw;
+}
+.page-footer .top-ct .fl-left .text .md-row {
+  margin: 0 0 1rem;
+}
+.page-footer .top-ct .fl-left .text .md-row .flex-ct {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer .top-ct .fl-left strong {
+  display: block;
+}
+.page-footer .bottom-ct {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer .bottom-ct strong {
+  font-size: -webkit-calc(1vw + 3px);
+  font-size: calc(1vw + 3px);
+}
+@media screen and (max-width: 768px) {
+  .page-footer {
+    font-size: -webkit-calc(1.7vw + 3px);
+    font-size: calc(1.7vw + 3px);
+  }
+  .page-footer .fl-left {
+    width: 54%;
+  }
+  .page-footer .fl-right {
+    width: 42%;
+  }
+  .page-footer .top-ct h4.caption {
+    font-size: -webkit-calc(3vw + 2px);
+    font-size: calc(3vw + 2px);
+  }
+  .page-footer .top-ct .fl-left .text .md-row {
+    margin: 0 0 0.5rem;
+  }
+  .page-footer .top-ct .fl-left .text .md-row p {
+    line-height: 1.3em;
+  }
+  .page-footer .bottom-ct {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row-reverse nowrap;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+  }
+  .page-footer .bottom-ct .fl-left {
+    width: 41%;
+  }
+  .page-footer .bottom-ct .fl-right {
+    width: 54%;
+  }
+  .page-footer .bottom-ct strong {
+    font-size: -webkit-calc(1.8vw + 1px);
+    font-size: calc(1.8vw + 1px);
+  }
+}
