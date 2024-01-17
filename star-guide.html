@@ -1,0 +1,625 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="ja"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <link  href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/fontawesome/fontawesome.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/semantic/semantic.min.css" rel="stylesheet" type="text/css">
+  <link  href="css/style.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+ <!--  font-family: 'Montserrat', sans-serif; -->
+</head>
+<body>
+
+
+<header class="page-header">
+  <div class="top-header">
+    <div class="h-container clearfix">
+       <div class="logo logo-star-shop">
+        <a href="#"><img src="./images/logo-star-shop.png"></a>
+      </div>
+      <div class="logo-2">
+        <a href="#"><img src="../images/logo-2.png"></a>
+      </div>
+      <div class="meta-right">
+        <div class="head-search">
+          <div class="icon-search" data-toggle="modal" data-target="#searchModal">
+            <img src="./images/icon-search.png">
+          </div>
+        </div>
+        <div class="text UTMBebas-font font-size-30">
+          <span>Đăng nhập</span>
+           <div class="icon"><img src="./images/icon-account.png"></div>
+        </div>
+        <div class="text UTMBebas-font font-size-30 language" style="display: none;">
+          <span class="hl">Eng</span>/VIE
+        </div>
+        <div class="icon-cart">
+            <a href="#"><img src="./images/icon-cart.png"></a>
+          </div>
+        <div id="open-sapporo-nav" class="bg-transparent border-0 p-0" type="button" aria-expanded="true" aria-label="Toggle navigation">
+            <img src="./images/menu.png">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="main-nav UTMBebas-font text-center">
+    <div class="h-container">
+      <div class="sidebar-header clearfix md-mb">
+          <img id="close-sapporo-nav" src="./images/menu-close-icon.png">
+      </div>
+      <ul class="menu">
+        <li class="has-sub">
+          <a >Sapporo star guide</a>
+          <ul class="sub-menu">
+            <li><a href="#">Ăn sành</a></li>
+            <li><a href="#">uống chuẩn</a></li>
+            <li><a href="#">sống tinh tế</a></li>
+            <li><a href="#">Ngày tận hưởng</a></li>
+            <li><a href="#">điểm tận hưởng</a></li>
+            <li><a href="#">Star TV</a></li>
+            <li><a href="#">về star guide</a></li>
+          </ul>
+        </li>
+        <li><a href="">star shop</a></li>
+        <li><a href="">về sapporo premium beer</a></li>
+        <li class="has-sub">
+          <a>Star town</a>
+          <ul class="sub-menu">
+            <li><a href="#">3C town</a></li>
+            <li><a href="#">3c quiz</a></li>
+            <li><a href="#">star bar</a></li>
+          </ul>
+        </li>
+        <li><a href="">quà thành viên</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-transparent promotion-register">
+      <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+        <img src="https://www.sapporo-starguide.com/static/images/sapporo/navigation/close-popup-promotion.png"/>
+      </button>
+      <div class="modal-body p-0 border-0">
+        <div class="text-center px-3 pb-4 pt-4">
+          <div class="logo-bg"></div>
+          <div class="px-2 text-white">
+            <form action="" class="row justify-content-center">
+                            <h4 class="UTMBebas-font sapporo-text-primary">Tìm kiếm trên Star Guide</h4>
+              <div class="col-12 mb-3">
+                <input id="autoComplete" name="term" value="" type="text" class="px-3 w-100" placeholder="Hãy nhập từ khoá ..." required/>
+              </div>
+              <button type="submit" class="btn btn-primary btn-rounded text-uppercase col-6 col-md-4 UTMBebas-font">
+                Tìm kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.page-header -->
+
+<main class="page-main page-star-guide">
+  <div class="breadcrumb">
+  	<div class="h-container UTMBebas-font font-size-25">
+  		<ul>
+  			<li><a href="#">Trang chủ ></a></li>
+  			<li><span>Sapporo starguide</span></li>
+  		</ul>
+  	</div>
+  </div>
+  <div class="star-guide-content">
+  	<div class="top-link MyriadPro-font font-size-40">
+  		<div class="h-container">
+  			<ul>
+  				<li><a class="active" href="#">Ăn sành</a></li>
+  				<li><a href="#">Uống chuẩn</a></li>
+  				<li><a href="#">Sống tinh tế</a></li>
+  			</ul>
+  		</div>
+  		
+  	</div>
+  	<div class="h-container">
+  		<div class="blk-news">
+  			<div class="md-row clearfix">
+  				<div class="thumb">
+  					<a href="#"><img src="./images/star-guide/news-1.jpg"></a>
+  				</div>
+  				<div class="content">
+  					<div class="hot-post">
+  						<div class="icon"><img src="./images/icon-star.png"></div>
+  						<div class="text UTMBebas-font font-size-40">ĐỌC NHIỀU NHẤT</div>
+  					</div>
+  					<a href="#">
+  						
+  						<div class="title">
+  							<h3 class="UTMBebas-font font-size-50">NGHỆ THUẬT THƯỞNG THỨC SUSHI TINH TẾ & BIA ÊM ĐẰM THƯỢNG HẠNG</h3>
+  						</div>
+  						<div class="info">
+  							<p>Là “fan cứng” của ẩm thực Nhật Bản, liệu bạn đã biết thưởng thức món sushi đúng cách? </br>Hãy để Sapporo Star Guide bật mí “luật ngầm” để thưởng thức trọn vẹn hương vị món ăn tinh tế này.</p>
+  						</div>
+  					</a>
+  				</div>
+  			</div>
+  			<div class="md-row clearfix">
+  				<div class="thumb">
+  					<a href="#"><img src="./images/star-guide/news-2.jpg"></a>
+  				</div>
+  				<div class="content">
+  					<div class="hot-post">
+  						<div class="icon"><img src="./images/icon-star.png"></div>
+  						<div class="text UTMBebas-font font-size-40">mới NHẤT</div>
+  					</div>
+  					<a href="#">
+  						
+  						<div class="title">
+  							<h3 class="UTMBebas-font font-size-50">GỢI Ý UỐNG CHUẨN – ĂN SÀNH KHI  GHÉ THĂM THÀNH PHỐ SAPPORO</h3>
+  						</div>
+  						<div class="info">
+  							<p>Thật là một thiếu sót khi đến thành phố Sapporo, Nhật Bản mà không tận hưởng một ly bia êm đằm và thưởng thức các món ăn đặc sản phương Bắc. Đó là những món nào? Hãy để Sapporo Star Guide gợi ý “food tour” cho bạn nhé!</p>
+  						</div>
+  					</a>
+  				
+  				</div>
+  			</div>
+  		</div>	
+  		<div class="blk-three-col clearfix">
+  			<div class="top-title UTMBebas-font">
+  				<strong>Bài viết khác</strong>
+  			</div>
+  			<div class="content">
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-1.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>NÊN & KHÔNG NÊN DÙNG GÌ TRƯỚC KHI THƯỞNG BIA?</h3>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-2.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>DỊP NÀO THỨC ĐÓ: GỢI Ý “KẾT ĐÔI” BIRU COCKTAILS & MÓN ĂN CHO BỮA TIỆC MÙA HÈ</h3>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-3.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>GỢI Ý COMBO LAI RAI “CHUẨN BÀI”: YAKITORI & BIA ÊM ĐẰM</h3>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-4.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>GỢI Ý “CẶP BÀI TRÙNG” CHUẨN NHẬT CHO BUỔI HẸN VALENTINE</h3>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-5.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>NÂNG TẦM THƯỞNG THỨC VỚI BIA & MÓN ĂN</h3>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<div class="thumb">
+  						<a href="">
+  							<img src="./images/star-guide/bai-viet-khac-6.jpg">
+  						</a>
+  					</div>
+  					<div class="info">
+  						<a href="#">
+  							<h3>SỰ KẾT HỢP ĐẦY HƯƠNG VỊ CỦA BIA & XÚC XÍCH NƯỚNG</h3>
+  						</a>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="pagination clearfix">
+  				<ul>
+			       <li><a class="active" href="">1</a></li>
+			       <li><a href="">2</a></li>
+			       <li><a href="">3</a></li>
+			       <li><a href="">4</a></li>
+			    </ul>
+  			</div>	
+  		</div>
+  		<div class="blk-tan-huong">			
+  				<ul class="nav nav-tabs" role="tablist">
+  					<li class="nav-item">
+  						<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Điểm tận hưởng</a>
+  					</li>
+  					<li class="nav-item">
+  						<a class="nav-link	" data-toggle="tab" href="#tabs-2" role="tab">Ngày tận hưởng</a>
+  					</li>
+  				</ul>	
+  				<div class="tab-content">
+  					<div class="tab-pane active" id="tabs-1" role="tabpanel">
+	  			  		<div class="blk-three-col clearfix">	  			
+	  			  			<div class="content">
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-1.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>NÊN & KHÔNG NÊN DÙNG GÌ TRƯỚC KHI THƯỞNG BIA?</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-2.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>DỊP NÀO THỨC ĐÓ: GỢI Ý “KẾT ĐÔI” BIRU COCKTAILS & MÓN ĂN CHO BỮA TIỆC MÙA HÈ</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-3.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>GỢI Ý COMBO LAI RAI “CHUẨN BÀI”: YAKITORI & BIA ÊM ĐẰM</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-4.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>GỢI Ý “CẶP BÀI TRÙNG” CHUẨN NHẬT CHO BUỔI HẸN VALENTINE</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-5.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>NÂNG TẦM THƯỞNG THỨC VỚI BIA & MÓN ĂN</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/bai-viet-khac-6.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>SỰ KẾT HỢP ĐẦY HƯƠNG VỊ CỦA BIA & XÚC XÍCH NƯỚNG</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  			</div>
+	  			  			<div class="smd-show-more black">
+		  			        	<a href="#" class="UTMBebas-font">Xem thêm điểm tận hưởng</a>
+		  			      	</div>	
+	  			  		</div>			
+  					</div>
+  					<div class="tab-pane" id="tabs-2" role="tabpanel">
+ 	  			  		<div class="blk-three-col clearfix">	  			
+	  			  			<div class="content">
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-1.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>NÊN & KHÔNG NÊN DÙNG GÌ TRƯỚC KHI THƯỞNG BIA?</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-2.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>DỊP NÀO THỨC ĐÓ: GỢI Ý “KẾT ĐÔI” BIRU COCKTAILS & MÓN ĂN CHO BỮA TIỆC MÙA HÈ</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-3.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>GỢI Ý COMBO LAI RAI “CHUẨN BÀI”: YAKITORI & BIA ÊM ĐẰM</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-4.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>GỢI Ý “CẶP BÀI TRÙNG” CHUẨN NHẬT CHO BUỔI HẸN VALENTINE</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-5.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>NÂNG TẦM THƯỞNG THỨC VỚI BIA & MÓN ĂN</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  				<div class="item">
+	  			  					<div class="thumb">
+	  			  						<a href="">
+	  			  							<img src="./images/star-guide/tan-huong-6.jpg">
+	  			  						</a>
+	  			  					</div>
+	  			  					<div class="info">
+	  			  						<a href="#">
+	  			  							<h3>SỰ KẾT HỢP ĐẦY HƯƠNG VỊ CỦA BIA & XÚC XÍCH NƯỚNG</h3>
+	  			  						</a>
+	  			  					</div>
+	  			  				</div>
+	  			  			</div>
+	  			  			<div class="smd-show-more md-desktop black">
+		  			        	<a href="#" class="UTMBebas-font">Xem thêm điểm tận hưởng</a>
+		  			      	</div>	
+	  			  		</div>	 						
+  					</div>
+  					
+  				</div>
+  			
+  		</div>
+  	</div>
+  </div>
+  <div class="home-blk-6">
+    <div class="oveflow-hidden">
+      <div class="h-container">
+          <div class="smd-line">
+            <div class="img">
+              <img src="./images/logo-saparo-tv.png">
+            </div>
+           
+          </div>
+      </div>
+     
+    </div>
+    <div class="h-container clearfix">
+      
+      <div class="left-ct">
+        <div class="video-star-tv active-video" id="lfjP0VC0T30">
+             <div class="hytPlayerWrapOuter">
+               <div class="hytPlayerWrap video-placement">
+                 <iframe class="youtube-embed" id="main-play1" src="https://www.youtube.com/embed/lfjP0VC0T30?rel=0&amp;enablejsapi=1" width="100%" height="400px" frameborder="0" allow="autoplay"></iframe>
+               </div>
+
+             </div>
+        </div>
+         <div class="video-star-tv" id="D3n16kx_yyk">
+             <div class="hytPlayerWrapOuter">
+               <div class="hytPlayerWrap video-placement">
+                 <iframe class="youtube-embed" id="main-play" src="https://www.youtube.com/embed/D3n16kx_yyk?rel=0&amp;enablejsapi=1" width="100%" height="400px" frameborder="0" allow="autoplay"></iframe>
+               </div>
+             </div>
+        </div>
+         <div class="video-star-tv" id="qOlZeRirHWI">
+             <div class="hytPlayerWrapOuter">
+               <div class="hytPlayerWrap video-placement">
+                 <iframe class="youtube-embed" id="main-play" src="https://www.youtube.com/embed/qOlZeRirHWI?rel=0&amp;enablejsapi=1" width="100%" height="400px" frameborder="0" allow="autoplay"></iframe>
+               </div>
+             </div>
+        </div>
+        <div class="blk-select">
+            <div class="ui selection dropdown">
+              <input name="gender" type="hidden" value="default">
+              <i class="dropdown icon"></i>
+              <div class="default text">Chọn Tập</div>
+              <div class="menu">
+                    <div class="item" data-value="#lfjP0VC0T30">
+                        <span> check ngay đia điểm hẹn hò</span>
+                    </div>
+                    <div class="item" data-value="#D3n16kx_yyk">
+                        <span> check ngay đia điểm hẹn hò</span>
+                    </div>
+                    <div class="item" data-value="#qOlZeRirHWI">
+                        <span> check ngay đia điểm hẹn hò</span>
+                    </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="main-star-tv-home">
+        <div class="block-three-videos">
+                <div class="blk-col">
+                    <div class="thumb-nail" data-src="#D3n16kx_yyk">
+                        <img src="./images/star-tv/teu-lam-lang.jpg" alt="">
+                    </div>
+                    <!--  <div class="blk-select">
+                        <div class="ui selection dropdown">
+                          <input name="gender" type="hidden" value="default">
+                          <i class="dropdown icon"></i>
+                          <div class="default text">Chọn Tập</div>
+                          <div class="menu">
+                                <div class="item" data-value="#lfjP0VC0T30">
+                                    <span>Tập 1</span>
+                                </div>
+                                <div class="item" data-value="#D3n16kx_yyk">
+                                    <span>Tập 2</span>
+                                </div>
+                                <div class="item" data-value="#qOlZeRirHWI">
+                                    <span>Tập 3</span>
+                                </div>
+                          </div>
+                         </div>
+                    </div> -->
+                    
+                </div>
+                 <div class="blk-col">
+                    <div class="thumb-nail"data-src="#qOlZeRirHWI">
+                        <img src="./images/star-tv/diem-tan-huong.jpg" alt="">
+                    </div>
+                   <!--   <div class="blk-select">
+                        <div class="ui selection dropdown">
+                          <input name="gender" type="hidden" value="default">
+                          <i class="dropdown icon"></i>
+                          <div class="default text">Chọn Tập</div>
+                          <div class="menu">
+                                <div class="item" data-value="#lfjP0VC0T30">
+                                    <span>Tập 1</span>
+                                </div>
+                                <div class="item" data-value="#D3n16kx_yyk">
+                                    <span>Tập 2</span>
+                                </div>
+                                <div class="item" data-value="#qOlZeRirHWI">
+                                    <span>Tập 3</span>
+                                </div>
+                          </div>
+                         </div>
+                    </div> -->
+                    
+                </div>
+
+                <div class="smd-show-more">
+                  <a href="#" class="UTMBebas-font">Xem tất cả</a>
+                </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+<!-- /.page-main -->
+
+<footer class="page-footer">
+  <div class="h-container">
+  	<div class="top-ct">
+  		<div class="fl-left">
+  			<h4 class="caption UTMBebas-font">Công ty tnhh sapporo việt nam</h4>
+  			<div class="text">
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">TRỤ SỞ CHÍNH:</strong>
+  					<p>Khu công nghiệp Việt Hóa – Đức Hòa 3, Xã Đức Lập Hạ, Huyện Đức Hòa, Tỉnh Long An, Việt Nam</p>
+  				</div>
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">VĂN PHÒNG LIÊN LẠC</strong>
+  					<p>Tầng 2, Tòa nhà Miss Áo Dài. 21 Nguyễn Trung Ngạn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+  				</div>
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">ĐIỆN THOẠI</strong>
+  					<div class="flex-ct">
+  						<div class="item"><span class="SVN-GothamBold-font">VP HCM:</span> (84-28) 2221 7666</div>
+  						<div class="item"><span class="SVN-GothamBold-font">Hotline:</span> 1800 8010</div>
+  						<div class="item"><span class="SVN-GothamBold-font">FAX:</span> (84-28) 2221 7671</div>					
+  					</div>
+  				</div>
+  				
+  			</div>
+  		</div>
+  		<div class="fl-right">
+  			<h4 class="caption UTMBebas-font">Công ty tnhh sapporo việt nam</h4>
+  			<div class="md-social">
+  				<ul>
+  					<li class="fb"><a href="#"><img src="./images/icon-fb.png"></a></li>
+  					<li class="instagram"><a href="#"><img src="./images/icon-instagram.png"></a></li>
+  					<li class="yt"><a href="#"><img src="./images/icon-yt.png"></a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="bottom-ct">
+  		<div class="fl-left">
+  			<strong class="UTMBebas-font">NGƯỜI DƯỚI 18 TUỔI KHÔNG ĐƯỢC UỐNG RƯỢU, BIA</strong>
+  		</div>
+  		<div class="fl-right">
+  			<strong class="UTMBebas-font">2024 © Bản quyền Sở hữu thuộc Công ty TNHH Sapporo Việt Nam</strong>
+  		</div>
+  	</div>
+  </div>
+</footer>
+<!-- /.page-footer -->
+
+<script src="vendor/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="vendor/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+<script src="vendor/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js?"></script>
+<script src="scripts/an.js" type="text/javascript"></script>
+<script src="scripts/star-tv-home.js" type="text/javascript"></script>
+</body>
+</html>
+

@@ -86,18 +86,6 @@ $( ".video-star-tv" ).each(function( index ) {
     setTimeout(function(){ $("#yt").show(); }, 200);
     }
   })
-  // function set_max_width_drop_down(){
-  //   var set_max_width_drop_down=$(".block-three-videos .blk-col").width() - 20;
-  //   $(".block-three-videos .ui.dropdown>.text").css("max-width",set_max_width_drop_down);
-
-  // }
-  // set_max_width_drop_down();
-  //   window.onresize = function() {
-  //       set_max_width_drop_down();
-  //   }
-  //   window.addEventListener("resize", function(event) {
-  //       set_max_width_drop_down();
-  //   })
 
 
 
