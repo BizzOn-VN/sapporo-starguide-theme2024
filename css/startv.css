@@ -52,9 +52,6 @@
 }
 
 .main-star-tv-home {
-  background: url(../images/bg-ft.jpg) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
   position: relative;
 }
 

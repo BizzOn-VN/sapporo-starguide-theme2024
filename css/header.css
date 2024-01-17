@@ -20,6 +20,9 @@
 .page-header .logo.logo-star-shop {
   width: 10%;
 }
+.page-header .logo.logo-star-guide {
+  width: 13%;
+}
 .page-header .logo img {
   width: 100%;
 }
@@ -116,6 +119,21 @@
          -o-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
     width: 57%;
+  }
+  .page-header .logo.logo-star-shop {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .page-header .logo.logo-star-guide {
+    width: 22%;
+    left: 46%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .page-header .text.language {
     display: none;
@@ -264,6 +282,82 @@
   }
   .main-nav ul.menu li .sub-menu li a:hover {
     background: rgba(0, 0, 0, 0.6);
+  }
+  .main-nav.hl {
+    left: -300px;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    overflow-x: hidden;
+    top: 0px;
+    background-image: url(https://www.sapporo-starguide.com/static/images/sapporo/sidebar/bg-navigation.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    width: 300px;
+  }
+  .main-nav.hl .h-container {
+    width: 100%;
+    padding: 0;
+  }
+  .main-nav.hl.active-menu {
+    left: 0px;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .main-nav.hl .sidebar-header {
+    display: block !important;
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 30px;
+    color: #f6a95a;
+  }
+  .main-nav.hl .sidebar-header img {
+    float: left;
+    width: 24px;
+  }
+  .main-nav.hl ul.menu {
+    text-align: left;
+    display: block;
+  }
+  .main-nav.hl ul.menu li {
+    padding: 0;
+  }
+  .main-nav.hl ul.menu li.has-sub {
+    padding: 0.2rem 0rem 0.2rem 0rem;
+  }
+  .main-nav.hl ul.menu li.has-sub:before {
+    display: none;
+  }
+  .main-nav.hl ul.menu li.has-sub a {
+    background: none;
+    padding: 0.4rem 2rem 0.5rem 1rem;
+  }
+  .main-nav.hl ul.menu li a {
+    font-size: 20px;
+    line-height: 20px;
+    color: #df8b36;
+  }
+  .main-nav.hl ul.menu li a:hover {
+    background: #313131 !important;
+  }
+  .main-nav.hl ul.menu li .sub-menu {
+    background: none;
+    padding: 1vw 0px 0px;
+  }
+  .main-nav.hl ul.menu .sub-menu {
+    display: block;
+    position: relative;
+    padding: 1rem 0px 0px;
+  }
+  .main-nav.hl ul.menu .sub-menu li {
+    padding: 0.2rem 0 0.2rem 0;
+  }
+  .main-nav.hl ul.menu .sub-menu li a {
+    color: #FFF;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
