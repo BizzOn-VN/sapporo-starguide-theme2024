@@ -178,7 +178,7 @@
     width: 100%;
   }
   .home-blk2 .gr-slider .slide-news .text {
-    bottom: 4vw;
+    bottom: 6vw;
   }
   .home-blk2 .gr-slider .slide-news .text .new {
     font-size: 4.5vw;
@@ -192,11 +192,19 @@
     background: #FFF;
     width: 100%;
   }
+  .home-blk2 .gr-slider .slider-star-guid .smd-show-more a {
+    font-size: 3.6vw;
+  }
+  .home-blk2 .gr-slider .slider-star-guid .smd-show-more a:before {
+    width: 1.9vw;
+    height: 2.3vw;
+  }
   .home-blk2 .gr-slider .slider-star-guid #slider-1 {
     width: 65%;
   }
   .home-blk2 .gr-slider .slider-star-guid #slider-1 .item strong {
     font-size: 6vw;
+    padding-top: 2vw;
   }
   .home-blk2 .gr-slider .slider-star-guid #slider-1 .owl-nav .owl-next {
     width: 4vw;
@@ -223,7 +231,7 @@
     font-size: 5vw;
   }
   .home-blk2 .smd-show-more {
-    margin: 2.7vw 1vw 0px 0px;
+    margin: 3.5vw 1vw 0px 0px;
   }
 }
 

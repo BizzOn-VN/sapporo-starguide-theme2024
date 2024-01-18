@@ -1,0 +1,362 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="ja"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <link  href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/fontawesome/fontawesome.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/semantic/semantic.min.css" rel="stylesheet" type="text/css">
+  <link  href="css/style.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+ <!--  font-family: 'Montserrat', sans-serif; -->
+</head>
+<body>
+
+
+<header class="page-header">
+  <div class="top-header">
+    <div class="h-container clearfix">
+       <div class="logo logo-star-guide">
+        <a href="#"><img  src="./images/logo-star-guide-black.png"></a>
+      </div>
+      <div class="logo-2">
+        <a href="#"><img src="../images/logo-2.png"></a>
+      </div>
+      <div class="meta-right">
+        <div class="head-search">
+          <div class="icon-search" data-toggle="modal" data-target="#searchModal">
+            <img src="./images/icon-search.png">
+          </div>
+        </div>
+        <div class="text UTMBebas-font font-size-30">
+          <span>Đăng nhập</span>
+           <div class="icon"><img src="./images/icon-account.png"></div>
+        </div>
+        <div class="text UTMBebas-font font-size-30 language" style="display: none;">
+          <span class="hl">Eng</span>/VIE
+        </div>
+        <div class="icon-cart">
+            <a href="#"><img src="./images/icon-cart.png"></a>
+          </div>
+        <div id="open-sapporo-nav" class="bg-transparent border-0 p-0" type="button" aria-expanded="true" aria-label="Toggle navigation">
+            <img src="./images/menu.png">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="main-nav UTMBebas-font text-center hl">
+    <div class="h-container">
+      <div class="sidebar-header clearfix md-mb">
+          <img id="close-sapporo-nav" src="./images/menu-close-icon.png">
+      </div>
+      <ul class="menu">
+        <li class="has-sub">
+          <a >Sapporo star guide</a>
+          <ul class="sub-menu">
+            <li><a href="#">Ăn sành</a></li>
+            <li><a href="#">uống chuẩn</a></li>
+            <li><a href="#">sống tinh tế</a></li>
+            <li><a href="#">Ngày tận hưởng</a></li>
+            <li><a href="#">điểm tận hưởng</a></li>
+            <li><a href="#">Star TV</a></li>
+            <li><a href="#">về star guide</a></li>
+          </ul>
+        </li>
+        <li><a href="">star shop</a></li>
+        <li><a href="">về sapporo premium beer</a></li>
+        <li class="has-sub">
+          <a>Star town</a>
+          <ul class="sub-menu">
+            <li><a href="#">3C town</a></li>
+            <li><a href="#">3c quiz</a></li>
+            <li><a href="#">star bar</a></li>
+          </ul>
+        </li>
+        <li><a href="">quà thành viên</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-transparent promotion-register">
+      <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+        <img src="https://www.sapporo-starguide.com/static/images/sapporo/navigation/close-popup-promotion.png"/>
+      </button>
+      <div class="modal-body p-0 border-0">
+        <div class="text-center px-3 pb-4 pt-4">
+          <div class="logo-bg"></div>
+          <div class="px-2 text-white">
+            <form action="" class="row justify-content-center">
+                            <h4 class="UTMBebas-font sapporo-text-primary">Tìm kiếm trên Star Guide</h4>
+              <div class="col-12 mb-3">
+                <input id="autoComplete" name="term" value="" type="text" class="px-3 w-100" placeholder="Hãy nhập từ khoá ..." required/>
+              </div>
+              <button type="submit" class="btn btn-primary btn-rounded text-uppercase col-6 col-md-4 UTMBebas-font">
+                Tìm kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.page-header -->
+
+<main class="page-main page-history">
+   <div class="breadcrumb">
+    <div class="h-container UTMBebas-font font-size-25">
+      <ul>
+        <li><a href="#">Trang chủ ></a></li>
+        <li><span>Về Sapporo Premium beer</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blk-history-1">
+    <div class="img-main">
+      <img class="md-desktop" src="./images/history/banner-history-1.jpg">
+      <img class="md-mb" src="./images/history/banner-history-1-mb.jpg">
+    </div>
+    <div class="content">
+      <h3 class="caption UTMBebas-font">Sự ra đời của</br> huyền thoại bia Nhật bản</h3>
+      <div class="legendarybiru">
+        <img  src="./images/history/text-legendarybiru.png">
+      </div>
+      <div class="info">
+        <p>Sapporo Premium Beer là thương hiệu bia lâu đời nhất ở Nhật Bản được thành lập vào năm 1876, với những sản phẩm mang dấu ấn đậm sâu của huyền thoại bia Nhật. Một loại bia tinh tế duy nhất được tạo ra bởi sự giao thoa giữa kỹ thuật sản xuất bia của nước Đức và nghệ thuật thủ công khéo léo của Nhật Bản - nhằm mang lại TUYỆT TÁC BIA với hương vị cân bằng hoàn hảo, cùng hậu vị mượt mà, sảng khoái đem đến những trải nghiệm mới mẻ và phút giây kết nối đầy ý nghĩa. </p>
+      </div>
+    </div>
+  </div>
+  <div class="blk-history-2">
+    <div class="slider-history owl-carousel owl-theme slider-desktop">
+      <div class="item item-1">
+        <img src="./images/history/slider-2/slider-1.jpg">
+      </div>
+      <div class="item item-2">
+        <img src="./images/history/slider-2/slider-2.jpg">
+      </div>
+      <div class="item item-3">
+        <img src="./images/history/slider-2/slider-3.jpg">
+      </div>
+      <div class="item item-4">
+        <img src="./images/history/slider-2/slider-4.jpg">
+      </div>
+    </div>
+    <div class="slider-history owl-carousel owl-theme slider-mb">
+      <div class="item item-1">
+        <img src="./images/history/slider-2-mb/slider-1.jpg">
+      </div>
+      <div class="item item-2">
+        <img src="./images/history/slider-2-mb/slider-2.jpg">
+      </div>
+      <div class="item item-3">
+        <img src="./images/history/slider-2-mb/slider-3.jpg">
+      </div>
+      <div class="item item-4">
+        <img src="./images/history/slider-2-mb/slider-4.jpg">
+      </div>
+    </div>
+  </div> 
+  <div class="blk-history-3">
+    <img class="md-desktop" src="./images/history/blk-3/desktop.jpg">
+    <img class="md-mb" src="./images/history/blk-3/mb.jpg">
+    <h3 class="caption UTMBebas-font">Yếu tố tạo nên </br>Vị bia huyền thoại</h3>
+    <div class="text text-1">
+      <div class="icon"><img src="./images/history/blk-3/icon-1.png"></div>
+      <p class=" UTMBebas-font"><span>QUY TRÌNH SẢN XUẤT </span><span>CHUẨN NHẬT</span></p>
+    </div>
+    <div class="text text-2">
+      <div class="icon"><img src="./images/history/blk-3/icon-2.png"></div>
+      <p class=" UTMBebas-font"><span>CÔNG NGHỆ FRESH KEEP</span> <span>ĐỘC QUYỀN</span></p>
+    </div>
+    <div class="text text-3">
+      <div class="icon"><img src="./images/history/blk-3/icon-3.png"></div>
+      
+      <p class="UTMBebas-font md-mb"><span>NGUYÊN LIỆU CHỌN LỌc</span> <span>TẠO NÊN CHẤT LƯỢNG</span> <span> THƯỢNG HẠNG</span></p>
+      <p class=" UTMBebas-font md-desktop"><span>NGUYÊN LIỆU CHỌN LỌC TẠO NÊN</span> <span>CHẤT LƯỢNG THƯỢNG HẠNG</span></p>
+    </div>
+  </div>  
+  <div class="blk-history-4 clearfix">
+      <strong class="caption Poppins-Bold-font md-mb">sản phẩm</strong>
+      <div class="slider-introduce owl-carousel owl-theme slider-desktop">
+        <div class="item">
+          <div class="produce">
+            <img src="./images/history/produce-1.png">
+          </div>
+          <div class="content">
+            <strong class="caption Poppins-Bold-font md-desktop">sản phẩm</strong>
+            <h3 class="title Poppins-Bold-font">Sapporo Premium Beer </br>lon 650ml</h3>
+            <div class="info">
+              <p>Đây chắc chắn là người bạn đồng hành ấn tượng nhất cho mọi khoảnh khắc tận hưởng. Sapporo Premium Beer 650ml là sự dung hoà độc đáo giữa hiện đại và cổ điển, khi thiết kế được lấy cảm hứng từ chiếc ly bia cổ và chế tác với chất liệu thép đặc biệt theo công nghệ độc đáo của Nhật Bản. Không chỉ nổi tiếng khắp toàn cầu, Sapporo Premium Beer 650ml cũng rất thân thuộc với các chiến hữu tại Việt Nam qua những trải nghiệm tận hưởng đẳng cấp và tuyệt vời.</p>
+            </div>
+            <div class="bottom-meta UTMBebas-font">
+              <div class="meta">
+                <div class="fl-left">
+                  Dung tích: <span>650ml </span>
+                </div>
+                <div class="fl-right">
+                  Nồng Độ Cồn: <span>5.0%</span>
+                </div>
+              </div>
+              Nguyên liệu: <span>Nước, Đại Mạch, Ngũ Cốc, Hoa Bia</span>
+            </div>
+            <div class="smd-more">
+              <a class=" UTMBebas-font" href="#">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="produce">
+            <img src="./images/history/produce-2.png">
+          </div>
+          <div class="content">
+            <strong class="caption Poppins-Bold-font md-desktop">sản phẩm</strong>
+            <h3 class="title Poppins-Bold-font">Sapporo Premium Beer </br>lon 650ml</h3>
+            <div class="info">
+              <p>Đây chắc chắn là người bạn đồng hành ấn tượng nhất cho mọi khoảnh khắc tận hưởng. Sapporo Premium Beer 650ml là sự dung hoà độc đáo giữa hiện đại và cổ điển,</p>
+            </div>
+            <div class="bottom-meta UTMBebas-font">
+              <div class="meta">
+                <div class="fl-left">
+                  Dung tích: <span>650ml </span>
+                </div>
+                <div class="fl-right">
+                  Nồng Độ Cồn: <span>5.0%</span>
+                </div>
+              </div>
+              Nguyên liệu: <span>Nước, Đại Mạch, Ngũ Cốc, Hoa Bia</span>
+            </div>
+            <div class="smd-more">
+              <a class=" UTMBebas-font" href="#">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="produce">
+            <img src="./images/history/produce-1.png">
+          </div>
+          <div class="content">
+            <strong class="caption Poppins-Bold-font md-desktop">sản phẩm</strong>
+            <h3 class="title Poppins-Bold-font">Sapporo Premium Beer </br>lon 650ml</h3>
+            <div class="info">
+              <p>Đây chắc chắn là người bạn đồng hành ấn tượng nhất cho mọi khoảnh khắc tận hưởng. Sapporo Premium Beer 650ml là sự dung hoà độc đáo giữa hiện đại và cổ điển, khi thiết kế được lấy cảm hứng từ chiếc ly bia cổ và chế tác với chất liệu thép đặc biệt theo công nghệ độc đáo của Nhật Bản. Không chỉ nổi tiếng khắp toàn cầu, Sapporo Premium Beer 650ml cũng rất thân thuộc với các chiến hữu tại Việt Nam qua những trải nghiệm tận hưởng đẳng cấp và tuyệt vời.</p>
+            </div>
+            <div class="bottom-meta UTMBebas-font">
+              <div class="meta">
+                <div class="fl-left">
+                  Dung tích: <span>650ml </span>
+                </div>
+                <div class="fl-right">
+                  Nồng Độ Cồn: <span>5.0%</span>
+                </div>
+              </div>
+              Nguyên liệu: <span>Nước, Đại Mạch, Ngũ Cốc, Hoa Bia</span>
+            </div>
+            <div class="smd-more">
+              <a class=" UTMBebas-font" href="#">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="produce">
+            <img src="./images/history/produce-1.png">
+          </div>
+          <div class="content">
+            <strong class="caption Poppins-Bold-font md-desktop">sản phẩm</strong>
+            <h3 class="title Poppins-Bold-font">Sapporo Premium Beer </br>lon 650ml</h3>
+            <div class="info">
+              <p>Đây chắc chắn là người bạn đồng hành ấn tượng nhất cho mọi khoảnh khắc tận hưởng. Sapporo Premium Beer 650ml là sự dung hoà độc đáo giữa hiện đại và cổ điển, khi thiết kế được lấy cảm hứng từ chiếc ly bia cổ và chế tác với chất liệu thép đặc biệt theo công nghệ độc đáo của Nhật Bản. Không chỉ nổi tiếng khắp toàn cầu, Sapporo Premium Beer 650ml cũng rất thân thuộc với các chiến hữu tại Việt Nam qua những trải nghiệm tận hưởng đẳng cấp và tuyệt vời.</p>
+            </div>
+            <div class="bottom-meta UTMBebas-font">
+              <div class="meta">
+                <div class="fl-left">
+                  Dung tích: <span>650ml </span>
+                </div>
+                <div class="fl-right">
+                  Nồng Độ Cồn: <span>5.0%</span>
+                </div>
+              </div>
+              Nguyên liệu: <span>Nước, Đại Mạch, Ngũ Cốc, Hoa Bia</span>
+            </div>
+            <div class="smd-more">
+              <a class=" UTMBebas-font" href="#">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    
+  </div>  
+</main>
+<!-- /.page-main -->
+
+<footer class="page-footer">
+  <div class="h-container">
+  	<div class="top-ct">
+  		<div class="fl-left">
+  			<h4 class="caption UTMBebas-font">Công ty tnhh sapporo việt nam</h4>
+  			<div class="text">
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">TRỤ SỞ CHÍNH:</strong>
+  					<p>Khu công nghiệp Việt Hóa – Đức Hòa 3, Xã Đức Lập Hạ, Huyện Đức Hòa, Tỉnh Long An, Việt Nam</p>
+  				</div>
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">VĂN PHÒNG LIÊN LẠC</strong>
+  					<p>Tầng 2, Tòa nhà Miss Áo Dài. 21 Nguyễn Trung Ngạn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+  				</div>
+  				<div class="md-row">
+  					<strong class="SVN-GothamBold-font">ĐIỆN THOẠI</strong>
+  					<div class="flex-ct">
+  						<div class="item"><span class="SVN-GothamBold-font">VP HCM:</span> (84-28) 2221 7666</div>
+  						<div class="item"><span class="SVN-GothamBold-font">Hotline:</span> 1800 8010</div>
+  						<div class="item"><span class="SVN-GothamBold-font">FAX:</span> (84-28) 2221 7671</div>					
+  					</div>
+  				</div>
+  				
+  			</div>
+  		</div>
+  		<div class="fl-right">
+  			<h4 class="caption UTMBebas-font">Công ty tnhh sapporo việt nam</h4>
+  			<div class="md-social">
+  				<ul>
+  					<li class="fb"><a href="#"><img src="./images/icon-fb.png"></a></li>
+  					<li class="instagram"><a href="#"><img src="./images/icon-instagram.png"></a></li>
+  					<li class="yt"><a href="#"><img src="./images/icon-yt.png"></a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="bottom-ct">
+  		<div class="fl-left">
+  			<strong class="UTMBebas-font">NGƯỜI DƯỚI 18 TUỔI KHÔNG ĐƯỢC UỐNG RƯỢU, BIA</strong>
+  		</div>
+  		<div class="fl-right">
+  			<strong class="UTMBebas-font">2024 © Bản quyền Sở hữu thuộc Công ty TNHH Sapporo Việt Nam</strong>
+  		</div>
+  	</div>
+  </div>
+</footer>
+<!-- /.page-footer -->
+
+<script src="vendor/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="vendor/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+<script src="vendor/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js?"></script>
+<script src="scripts/an.js" type="text/javascript"></script>
+<script src="scripts/star-tv-home.js" type="text/javascript"></script>
+</body>
+</html>
+
