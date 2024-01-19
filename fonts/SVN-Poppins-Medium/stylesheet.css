@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-Poppins-Medium.eot');
+    src: url('SVN-Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Poppins-Medium.woff2') format('woff2'),
+        url('SVN-Poppins-Medium.woff') format('woff'),
+        url('SVN-Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

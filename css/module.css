@@ -186,6 +186,12 @@
           transition-duration: 0.5s;
   color: #000;
 }
+.smd-more.black a {
+  background: #000;
+}
+.smd-more.black a:hover {
+  color: #f4aa1c;
+}
 @media screen and (max-width: 768px) {
   .smd-more a {
     font-size: 4vw;
@@ -355,6 +361,68 @@
 .breadcrumb ul li {
   display: inline-block;
 }
+.breadcrumb ul li a:hover {
+  color: #000;
+}
+
+.smd-register-sm {
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+}
+.smd-register-sm .text {
+  text-align: center;
+  margin: 0px 0px 1rem;
+}
+.smd-register-sm .text p {
+  line-height: 1.2em;
+}
+.smd-register-sm .form {
+  display: table;
+  margin: 0 auto;
+}
+.smd-register-sm .form form input[type=text] {
+  border: 1px solid #000;
+  float: left;
+  height: 2.4rem;
+  border-right: none;
+  width: 23rem;
+  padding: 0px 5px 0px 15px;
+  color: #888888;
+}
+.smd-register-sm .form form .submit {
+  outline: none;
+  padding: 0 0.5rem;
+  background: #f4aa1c;
+  border: none;
+  float: left;
+  height: 2.4rem;
+  color: #FFF;
+  font-size: 1.6vw;
+  line-height: 1.2em;
+}
+.smd-register-sm .form form .submit:hover {
+  color: #000;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .smd-register-sm .text {
+    margin: 0px 0px 2.2vw;
+  }
+  .smd-register-sm .text p {
+    font-size: 4.5vw;
+  }
+  .smd-register-sm .form form input[type=text] {
+    width: 60vw;
+    height: 7vw;
+  }
+  .smd-register-sm .form form .submit {
+    height: 7vw;
+    font-size: 4vw;
+  }
+}
 
 .pagination {
   display: block;
@@ -383,8 +451,12 @@
 .pagination ul li a.active {
   background: #ff9000;
 }
-.pagination ul li a.active:hover {
+.pagination ul li a:hover {
   color: #FFF;
+  background: #ff9000;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 @media screen and (max-width: 768px) {
   .pagination ul li a {

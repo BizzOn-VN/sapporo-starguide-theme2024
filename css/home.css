@@ -335,46 +335,6 @@
 .home-blk3 .slider-home-blk3 .owl-nav .owl-prev span {
   display: none;
 }
-.home-blk3 .bottom-meta {
-  display: table;
-  margin: 0 auto;
-}
-.home-blk3 .bottom-meta .text {
-  text-align: center;
-  margin: 0px 0px 1rem;
-}
-.home-blk3 .bottom-meta .text p {
-  line-height: 1.2em;
-}
-.home-blk3 .bottom-meta .form {
-  display: table;
-  margin: 0 auto;
-}
-.home-blk3 .bottom-meta .form form input[type=text] {
-  border: 1px solid #000;
-  float: left;
-  height: 2.4rem;
-  border-right: none;
-  width: 23rem;
-  padding: 0px 5px 0px 15px;
-}
-.home-blk3 .bottom-meta .form form .submit {
-  outline: none;
-  padding: 0 0.5rem;
-  background: #f4aa1c;
-  border: none;
-  float: left;
-  height: 2.4rem;
-  color: #FFF;
-  font-size: 1.6vw;
-  line-height: 1.2em;
-}
-.home-blk3 .bottom-meta .form form .submit:hover {
-  color: #000;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
 @media screen and (max-width: 768px) {
   .home-blk3 {
     background: url(../images/bg-star-mb.jpg) no-repeat center;
@@ -421,17 +381,6 @@
   .home-blk3 .slider-home-blk3 .owl-nav .owl-prev {
     width: 1.4rem;
     height: 1.4rem;
-  }
-  .home-blk3 .bottom-meta .text p {
-    font-size: 4.5vw;
-  }
-  .home-blk3 .bottom-meta .form form input[type=text] {
-    width: 60vw;
-    height: 7vw;
-  }
-  .home-blk3 .bottom-meta .form form .submit {
-    height: 7vw;
-    font-size: 4vw;
   }
 }
 

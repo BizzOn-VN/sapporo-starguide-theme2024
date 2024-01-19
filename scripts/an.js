@@ -61,7 +61,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 } else {
 }
 
-$('.banner').owlCarousel({
+$('.s-days-slider').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
@@ -217,26 +217,23 @@ $('.blk-history-2 .slider-mb').owlCarousel({
     autoplay:true,
     autoplayTimeout:7000,
     autoplayTimeout:17000,
-    // autoplayHoverPause:true,
-    // autoplayHoverPause: true ,
     autoWidth:true,
     items:4
 })
 
-	function set_top_nav_introduce_slider(){
-		$(".blk-history-4 .slider-introduce .item .produce").css("height","auto")
-		$(".blk-history-4 .owl-item").each(function() {
-			if(maxHeight<$(this).children(".item").children(".produce").height()){
-				maxHeight=$(this).children(".item").children(".produce").height();
-				console.log(maxHeight)
-			}
-  			// maxHeight = maxHeight < $(this).height() ? maxHeight :     $(this).height();
-  			$(".blk-history-4 .slider-introduce .item .produce").css("height",maxHeight)
-  			$(".blk-history-4 .slider-introduce .owl-nav .owl-prev").css('top',maxHeight/2);
-  			$(".blk-history-4 .slider-introduce .owl-nav .owl-next").css('top',maxHeight/2);
-		});
-		
-	}
+function set_top_nav_introduce_slider(){
+	$(".blk-history-4 .slider-introduce .item .produce").css("height","auto")
+	$(".blk-history-4 .owl-item").each(function() {
+		if(maxHeight<$(this).children(".item").children(".produce").height()){
+			maxHeight=$(this).children(".item").children(".produce").height();
+			console.log(maxHeight)
+		}
+			$(".blk-history-4 .slider-introduce .item .produce").css("height",maxHeight)
+			$(".blk-history-4 .slider-introduce .owl-nav .owl-prev").css('top',maxHeight/2);
+			$(".blk-history-4 .slider-introduce .owl-nav .owl-next").css('top',maxHeight/2);
+	});
+	
+}
 
 var owl_introduce =$('.blk-history-4 .slider-introduce').owlCarousel({
     loop: true,
@@ -252,11 +249,8 @@ var owl_introduce =$('.blk-history-4 .slider-introduce').owlCarousel({
     onTranslated: set_top_nav_introduce_slider()
 })
 
-owl_introduce.on('changed.owl.carousel', function(e) {
-  var maxHeight = -1;
-		    
 
-});
+
 $('.info-gift .item').hover(function(){
 		$(".info-gift .item .info").removeClass("active");
         $(this).children(".info").addClass("active");
