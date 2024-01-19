@@ -183,8 +183,10 @@ slider2.owlCarousel({
 });
 
  $(window).on("load",function(){
+    $(".blk-scroll").mCustomScrollbar();
     $(".scrollbar").mCustomScrollbar();
     set_max_height_scrollbar();
+
 });
 
 set_max_height_scrollbar();

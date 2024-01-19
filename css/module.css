@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /* module css 01
  -----------------------------------------------------*/
+.css-scrollbar .mCSB_scrollTools .mCSB_draggerRail {
+  background: none;
+}
+.css-scrollbar .mCSB_scrollTools .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.3);
+  width: 6px;
+}
+.css-scrollbar .mCSB_inside > .mCSB_container {
+  margin-right: 15px;
+}
+
 .oveflow-hidden {
   overflow: hidden;
 }
