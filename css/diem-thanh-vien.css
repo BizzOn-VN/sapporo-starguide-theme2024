@@ -1,7 +1,7 @@
 /* diem-thanh-vien
  -----------------------------------------------------*/
 .page-diem-thanh-vien {
-  min-height: 150vw;
+  padding: 0px 0px 3vw;
   background: url(../images/diem-thanh-vien/bg-desktop.jpg) no-repeat top center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -26,7 +26,6 @@
     background: url(../images/diem-thanh-vien/bg-mb.jpg) no-repeat top center;
     -webkit-background-size: cover;
             background-size: cover;
-    min-height: 190vw;
     padding: 0px 0px 9vw;
   }
   .page-diem-thanh-vien .h-container {

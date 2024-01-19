@@ -302,13 +302,19 @@
   margin: 0;
 }
 
+.smd-table.hl-text {
+  font-family: "SVN-Gotham";
+}
+.smd-table.hl-text tbody th {
+  font-weight: 400;
+}
 .smd-table th {
   border-top: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.45rem 0.75rem;
 }
 .smd-table td {
   border-top: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.45rem 0.75rem;
 }
 .smd-table thead th {
   font-family: "SVN-GothamBlack";

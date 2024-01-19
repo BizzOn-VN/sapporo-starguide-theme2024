@@ -4,6 +4,10 @@
 /* general setting
  -----------------------------------------------------*/
 @font-face {
+  font-family: "SVN-Gotham";
+  src: url(../fonts/SVN-Gotham/SVN-Gotham.woff2) format("woff2"), url(../fonts/SVN-Gotham/SVN-Gotham.eot) format("eot"), url(../fonts/SVN-Gotham/SVN-Gotham.ttf) format("ttf"), url(../fonts/SVN-Gotham/SVN-Gotham.woff) format("woff");
+}
+@font-face {
   font-family: "UTMBebas";
   src: url(../fonts/UTMBebas/UTMBebas.woff2) format("woff2"), url(../fonts/UTMBebas/UTMBebas.eot) format("eot"), url(../fonts/UTMBebas/UTMBebas.ttf) format("ttf"), url(../fonts/UTMBebas/UTMBebas.woff) format("woff");
 }
@@ -415,13 +419,19 @@ input[type=submit] {
   margin: 0;
 }
 
+.smd-table.hl-text {
+  font-family: "SVN-Gotham";
+}
+.smd-table.hl-text tbody th {
+  font-weight: 400;
+}
 .smd-table th {
   border-top: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.45rem 0.75rem;
 }
 .smd-table td {
   border-top: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.45rem 0.75rem;
 }
 .smd-table thead th {
   font-family: "SVN-GothamBlack";
@@ -5444,7 +5454,7 @@ video::-webkit-media-controls-overlay-play-button {
 /* diem-thanh-vien
  -----------------------------------------------------*/
 .page-diem-thanh-vien {
-  min-height: 150vw;
+  padding: 0px 0px 3vw;
   background: url(../images/diem-thanh-vien/bg-desktop.jpg) no-repeat top center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -5469,7 +5479,6 @@ video::-webkit-media-controls-overlay-play-button {
     background: url(../images/diem-thanh-vien/bg-mb.jpg) no-repeat top center;
     -webkit-background-size: cover;
             background-size: cover;
-    min-height: 190vw;
     padding: 0px 0px 9vw;
   }
   .page-diem-thanh-vien .h-container {
