@@ -3154,15 +3154,18 @@ video::-webkit-media-controls-overlay-play-button {
 }
 @media screen and (max-width: 768px) {
   .page-header {
-    padding: 3vw 0px;
+    padding: 4.5vw 0px;
+  }
+  .page-header .logo-2 {
+    width: 6vw;
   }
   .page-header .meta-right #open-sapporo-nav {
-    width: 11.5%;
+    width: 7vw;
   }
   .page-header .meta-right .head-search .icon-search {
     padding-right: 1.5vw;
-    width: -webkit-calc(1.8vw + 12px);
-    width: calc(1.8vw + 12px);
+    width: -webkit-calc(2.3vw + 12px);
+    width: calc(2.3vw + 12px);
   }
   .page-header .logo {
     left: 0px;
@@ -3180,12 +3183,16 @@ video::-webkit-media-controls-overlay-play-button {
             transform: translate(-50%, -50%);
   }
   .page-header .logo.logo-star-guide {
-    width: 22%;
-    left: 46%;
+    width: 28%;
+    left: 40%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
          -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .page-header .logo.logo-star-shop {
+    width: 32%;
+    left: 37%;
   }
   .page-header .text.language {
     display: none;
@@ -4756,17 +4763,18 @@ video::-webkit-media-controls-overlay-play-button {
     margin: 0px 0px 1vw;
   }
   .star-guide-content .blk-three-col .top-title {
+    margin: 0px 0px 3vw;
     padding: 0 0 0 10%;
   }
   .star-guide-content .blk-three-col .top-title strong {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .star-guide-content .blk-three-col .top-title:before {
     height: 2px;
     width: 8%;
   }
   .star-guide-content .blk-three-col .top-title:after {
-    width: 65%;
+    width: 63%;
     height: 2px;
   }
   .star-guide-content .blk-three-col .content .item {

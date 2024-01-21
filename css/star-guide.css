@@ -267,17 +267,18 @@
     margin: 0px 0px 1vw;
   }
   .star-guide-content .blk-three-col .top-title {
+    margin: 0px 0px 3vw;
     padding: 0 0 0 10%;
   }
   .star-guide-content .blk-three-col .top-title strong {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .star-guide-content .blk-three-col .top-title:before {
     height: 2px;
     width: 8%;
   }
   .star-guide-content .blk-three-col .top-title:after {
-    width: 65%;
+    width: 63%;
     height: 2px;
   }
   .star-guide-content .blk-three-col .content .item {
