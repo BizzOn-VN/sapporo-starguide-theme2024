@@ -94,7 +94,35 @@ $('.s-days-slider').owlCarousel({
         }
     }
 })
-
+$('.slider-home-blk3').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    center:true,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 70
+        },
+        450:{
+            items:1,
+            stagePadding: 80
+        },
+        500:{
+            items:1,
+            stagePadding: 120
+        },
+         600:{
+            items:1,
+            stagePadding: 150
+        },
+        768:{
+            items:3
+        }
+    }
+})
 var  owl=$('.slide-news').owlCarousel({
     loop:true,
     margin:0,
