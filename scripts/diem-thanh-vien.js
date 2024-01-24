@@ -17,6 +17,12 @@
 })( jQuery );
 
 //set max-height -scollbar
+
  $(window).on("load",function(){
-    $(".blk-scroll").mCustomScrollbar();
+    $(".blk-scroll").mCustomScrollbar({
+    axis:"y" // vertical and horizontal scrollbar
+   });
+   $(".table-htr").mCustomScrollbar({
+    axis:"y" // vertical and horizontal scrollbar
+   });
 });

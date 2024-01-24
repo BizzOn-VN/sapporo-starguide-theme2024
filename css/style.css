@@ -710,6 +710,10 @@ input[type=submit] {
   font-family: "SVN-Poppins-Bold", sans-serif;
 }
 
+.SVN-GothamMedium-font {
+  font-family: "SVN-Poppins-Medium";
+}
+
 .font-size-50 {
   font-size: -webkit-calc(1.6vw + 10px);
   font-size: calc(1.6vw + 10px);
@@ -967,6 +971,12 @@ input[type=submit] {
 }
 .smd-table.hl-text tbody th {
   font-weight: 400;
+}
+.smd-table p {
+  margin: 0px 0px 0.2rem;
+}
+.smd-table p:last-child {
+  margin: 0;
 }
 .smd-table th {
   border-top: none;
@@ -3688,6 +3698,10 @@ video::-webkit-media-controls-overlay-play-button {
     font-size: -webkit-calc(1.8vw + 1px);
     font-size: calc(1.8vw + 1px);
   }
+}
+
+.color-yellow {
+  color: #f7ba45;
 }
 
 /* header
@@ -7132,10 +7146,28 @@ video::-webkit-media-controls-overlay-play-button {
             flex: 1 1 auto;
   }
   .blk-tich-diem .nav-tabs li a {
-    font-size: -webkit-calc(3.9vw + 0px);
-    font-size: calc(3.9vw + 0px);
+    font-size: -webkit-calc(3.2vw + 0px);
+    font-size: calc(3.2vw + 0px);
     text-align: center;
   }
+}
+.blk-tich-diem .tab-pane {
+  display: block;
+  height: 0;
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blk-tich-diem .tab-pane.active {
+  position: relative;
+  height: auto;
+  opacity: 1;
+  width: auto;
+  display: block;
+  overflow: initial;
 }
 .blk-tich-diem .tab-pane {
   padding: 4vw 5vw 4vw 5vw;
@@ -7301,7 +7333,7 @@ video::-webkit-media-controls-overlay-play-button {
   font-family: "UTMBebas";
 }
 .blk-tich-diem .tab-ct-2 .blk-scroll {
-  max-height: 40vw;
+  max-height: 30vw;
 }
 .blk-tich-diem .tab-ct-2 .blk-scroll .item {
   display: -webkit-box;
@@ -7384,7 +7416,7 @@ video::-webkit-media-controls-overlay-play-button {
     font-size: 7vw;
   }
   .blk-tich-diem .tab-ct-2 .blk-scroll {
-    max-height: 80vw;
+    max-height: 60vw;
   }
   .blk-tich-diem .tab-ct-2 .blk-scroll .item {
     margin: 0px 0px 2.5vw;
@@ -7563,5 +7595,97 @@ video::-webkit-media-controls-overlay-play-button {
     width: 13vw;
     display: block;
     min-width: 80px;
+  }
+}
+
+.tab-ct-4 .top-meta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 1.5vw;
+}
+.tab-ct-4 .top-meta .name {
+  font-family: "UTMBebas", sans-serif;
+  font-size: 2.5vw;
+  color: #000;
+}
+.tab-ct-4 .top-meta .text-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tab-ct-4 .top-meta .text-right a {
+  display: block;
+}
+.tab-ct-4 .top-meta .text-right .icon {
+  width: 1.2vw;
+}
+.tab-ct-4 .top-meta .text-right .icon img {
+  width: 100%;
+}
+.tab-ct-4 .top-meta .text-right .text {
+  padding-left: 0.3vw;
+  font-family: "UTMBebas", sans-serif;
+}
+.tab-ct-4 .top-meta .text-right .text a {
+  color: #7d7d7d;
+}
+@media screen and (max-width: 768px) {
+  .tab-ct-4 .top-meta {
+    margin: 0px 0px 5vw;
+  }
+  .tab-ct-4 .top-meta .name {
+    font-size: -webkit-calc(5.5vw + 5px);
+    font-size: calc(5.5vw + 5px);
+  }
+  .tab-ct-4 .top-meta .text-right .icon {
+    width: 3.3vw;
+  }
+  .tab-ct-4 .top-meta .text-right .text {
+    padding-left: 0.9vw;
+    font-size: -webkit-calc(2.2vw + 5px);
+    font-size: calc(2.2vw + 5px);
+  }
+  .tab-ct-4 .top-meta .text-right .text a {
+    line-height: 1.2em;
+  }
+}
+
+.table-htr {
+  max-height: 30vw;
+}
+.table-htr table {
+  margin: 0;
+  clear: both;
+}
+.table-htr table thead th {
+  font-size: -webkit-calc(1.8vw + 3px);
+  font-size: calc(1.8vw + 3px);
+  font-family: "UTMBebas";
+}
+@media screen and (max-width: 768px) {
+  .table-htr {
+    max-height: 60vw;
+  }
+  .table-htr.css-scrollbar .mCSB_scrollTools .mCSB_dragger_bar {
+    width: 3px;
+  }
+  .table-htr table thead th {
+    padding: 1.5vw 0.75vw;
+    font-size: -webkit-calc(3.8vw + 1px);
+    font-size: calc(3.8vw + 1px);
+  }
+  .table-htr table tbody td {
+    padding: 0.7vw 0.2vw;
   }
 }

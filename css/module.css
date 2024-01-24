@@ -593,6 +593,10 @@ input[type=submit] {
   font-family: "SVN-Poppins-Bold", sans-serif;
 }
 
+.SVN-GothamMedium-font {
+  font-family: "SVN-Poppins-Medium";
+}
+
 .font-size-50 {
   font-size: -webkit-calc(1.6vw + 10px);
   font-size: calc(1.6vw + 10px);
@@ -850,6 +854,12 @@ input[type=submit] {
 }
 .smd-table.hl-text tbody th {
   font-weight: 400;
+}
+.smd-table p {
+  margin: 0px 0px 0.2rem;
+}
+.smd-table p:last-child {
+  margin: 0;
 }
 .smd-table th {
   border-top: none;
@@ -3571,4 +3581,8 @@ video::-webkit-media-controls-overlay-play-button {
     font-size: -webkit-calc(1.8vw + 1px);
     font-size: calc(1.8vw + 1px);
   }
+}
+
+.color-yellow {
+  color: #f7ba45;
 }
