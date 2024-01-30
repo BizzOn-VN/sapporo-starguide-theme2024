@@ -80,6 +80,8 @@ $('.banner').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
+     autoplay:true,
+    autoplayTimeout:3000,
     dot:true,
     responsive:{
         0:{
