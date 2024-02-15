@@ -333,13 +333,11 @@
     display: none !important;
   }
   .blk-select .ui.selection.dropdown {
-    overflow: hidden;
-    padding: 2vw 0px 0px 0px;
+    padding: 2vw 0px 2.5vw 0px;
     border-radius: 0px;
     width: 95%;
   }
   .blk-select .ui.selection.dropdown .menu {
-    margin-top: 3vw;
     border-radius: 0px;
   }
   .blk-select .ui.selection.dropdown .text {
@@ -352,21 +350,6 @@
   }
   .blk-select .ui.dropdown .menu .selected.item span {
     padding: 0px;
-  }
-  .blk-select .ui.selection.dropdown .menu {
-    -webkit-animation: none !important;
-         -o-animation: none !important;
-            animation: none !important;
-    max-height: 9.01428571rem;
-    display: block !important;
-    visibility: visible;
-    position: initial !important;
-    height: auto !important;
-    top: 0px;
-    left: 0px;
-    padding: 0.5vw 0px 3vw 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .blk-select .ui.selection.dropdown .menu .item {
     text-align: left;

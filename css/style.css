@@ -5013,13 +5013,11 @@ video::-webkit-media-controls-overlay-play-button {
     display: none !important;
   }
   .blk-select .ui.selection.dropdown {
-    overflow: hidden;
-    padding: 2vw 0px 0px 0px;
+    padding: 2vw 0px 2.5vw 0px;
     border-radius: 0px;
     width: 95%;
   }
   .blk-select .ui.selection.dropdown .menu {
-    margin-top: 3vw;
     border-radius: 0px;
   }
   .blk-select .ui.selection.dropdown .text {
@@ -5034,19 +5032,8 @@ video::-webkit-media-controls-overlay-play-button {
     padding: 0px;
   }
   .blk-select .ui.selection.dropdown .menu {
-    -webkit-animation: none !important;
-         -o-animation: none !important;
-            animation: none !important;
     max-height: 9.01428571rem;
-    display: block !important;
-    visibility: visible;
-    position: initial !important;
-    height: auto !important;
-    top: 0px;
-    left: 0px;
     padding: 0.5vw 0px 3vw 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .blk-select .ui.selection.dropdown .menu .item {
     text-align: left;
@@ -5054,6 +5041,13 @@ video::-webkit-media-controls-overlay-play-button {
     font-size: -webkit-calc(2.5vw + 7px);
     font-size: calc(2.5vw + 7px);
     padding: 1vw 2vw 1vw 6vw !important;
+  }
+  .blk-select .ui.dropdown > .dropdown.icon {
+    height: 100%;
+  }
+  .blk-select .ui.dropdown > .dropdown.icon:before {
+    font-size: -webkit-calc(0.8vw + 8px);
+    font-size: calc(0.8vw + 8px);
   }
 }
 
@@ -5483,13 +5477,11 @@ video::-webkit-media-controls-overlay-play-button {
     display: none !important;
   }
   .blk-select .ui.selection.dropdown {
-    overflow: hidden;
-    padding: 2vw 0px 0px 0px;
+    padding: 2vw 0px 2.5vw 0px;
     border-radius: 0px;
     width: 95%;
   }
   .blk-select .ui.selection.dropdown .menu {
-    margin-top: 3vw;
     border-radius: 0px;
   }
   .blk-select .ui.selection.dropdown .text {
@@ -5502,21 +5494,6 @@ video::-webkit-media-controls-overlay-play-button {
   }
   .blk-select .ui.dropdown .menu .selected.item span {
     padding: 0px;
-  }
-  .blk-select .ui.selection.dropdown .menu {
-    -webkit-animation: none !important;
-         -o-animation: none !important;
-            animation: none !important;
-    max-height: 9.01428571rem;
-    display: block !important;
-    visibility: visible;
-    position: initial !important;
-    height: auto !important;
-    top: 0px;
-    left: 0px;
-    padding: 0.5vw 0px 3vw 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .blk-select .ui.selection.dropdown .menu .item {
     text-align: left;
@@ -5955,13 +5932,11 @@ video::-webkit-media-controls-overlay-play-button {
     display: none !important;
   }
   .blk-select .ui.selection.dropdown {
-    overflow: hidden;
-    padding: 2vw 0px 0px 0px;
+    padding: 2vw 0px 2.5vw 0px;
     border-radius: 0px;
     width: 95%;
   }
   .blk-select .ui.selection.dropdown .menu {
-    margin-top: 3vw;
     border-radius: 0px;
   }
   .blk-select .ui.selection.dropdown .text {
@@ -5976,19 +5951,8 @@ video::-webkit-media-controls-overlay-play-button {
     padding: 0px;
   }
   .blk-select .ui.selection.dropdown .menu {
-    -webkit-animation: none !important;
-         -o-animation: none !important;
-            animation: none !important;
     max-height: 9.01428571rem;
-    display: block !important;
-    visibility: visible;
-    position: initial !important;
-    height: auto !important;
-    top: 0px;
-    left: 0px;
     padding: 0.5vw 0px 3vw 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .blk-select .ui.selection.dropdown .menu .item {
     text-align: left;
