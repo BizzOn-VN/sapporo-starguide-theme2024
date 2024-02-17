@@ -64,8 +64,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: -webkit-calc(1.7vw + 5px);
-    font-size: calc(1.7vw + 5px);
+    font-size: -webkit-calc(1.7vw + 8px);
+    font-size: calc(1.7vw + 8px);
   }
 }
 
@@ -181,8 +181,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: -webkit-calc(1.7vw + 5px);
-    font-size: calc(1.7vw + 5px);
+    font-size: -webkit-calc(1.7vw + 7px);
+    font-size: calc(1.7vw + 7px);
   }
 }
 
@@ -3660,8 +3660,8 @@ video::-webkit-media-controls-overlay-play-button {
 }
 @media screen and (max-width: 768px) {
   .page-footer {
-    font-size: -webkit-calc(1.7vw + 3px);
-    font-size: calc(1.7vw + 3px);
+    font-size: -webkit-calc(1.7vw + 5px);
+    font-size: calc(1.7vw + 5px);
   }
   .page-footer .fl-left {
     width: 54%;
@@ -3670,8 +3670,9 @@ video::-webkit-media-controls-overlay-play-button {
     width: 42%;
   }
   .page-footer .top-ct h4.caption {
-    font-size: -webkit-calc(3vw + 2px);
-    font-size: calc(3vw + 2px);
+    font-size: -webkit-calc(3vw + 4px);
+    font-size: calc(3vw + 4px);
+    line-height: 1.1em;
   }
   .page-footer .top-ct .fl-left .text .md-row {
     margin: 0 0 0.5rem;
@@ -3695,8 +3696,8 @@ video::-webkit-media-controls-overlay-play-button {
     width: 54%;
   }
   .page-footer .bottom-ct strong {
-    font-size: -webkit-calc(1.8vw + 1px);
-    font-size: calc(1.8vw + 1px);
+    font-size: -webkit-calc(1.8vw + 6px);
+    font-size: calc(1.8vw + 6px);
   }
 }
 
@@ -4199,8 +4200,8 @@ video::-webkit-media-controls-overlay-play-button {
     width: 42%;
   }
   .page-footer .top-ct h4.caption {
-    font-size: -webkit-calc(3vw + 2px);
-    font-size: calc(3vw + 2px);
+    font-size: -webkit-calc(3vw + 4px);
+    font-size: calc(3vw + 4px);
   }
   .page-footer .top-ct .fl-left .text .md-row {
     margin: 0 0 0.5rem;
@@ -4424,7 +4425,8 @@ video::-webkit-media-controls-overlay-play-button {
     width: 100%;
   }
   .home-blk2 .gr-slider .slider-star-guid .smd-show-more a {
-    font-size: 3.6vw;
+    font-size: -webkit-calc(3.6vw + 2px);
+    font-size: calc(3.6vw + 2px);
   }
   .home-blk2 .gr-slider .slider-star-guid .smd-show-more a:before {
     width: 1.9vw;
@@ -6314,8 +6316,8 @@ video::-webkit-media-controls-overlay-play-button {
     font-size: calc(5.7vw + 5px);
   }
   .star-guide-content .blk-news .md-row .content .info {
-    font-size: -webkit-calc(1.7vw + 5px);
-    font-size: calc(1.7vw + 5px);
+    font-size: -webkit-calc(1.7vw + 7px);
+    font-size: calc(1.7vw + 7px);
   }
   .star-guide-content .blk-three-col {
     margin: 0px 0px 1vw;
@@ -6340,8 +6342,8 @@ video::-webkit-media-controls-overlay-play-button {
     width: 48%;
   }
   .star-guide-content .blk-three-col .content .item .info h3 {
-    font-size: -webkit-calc(2.5vw + 5px);
-    font-size: calc(2.5vw + 5px);
+    font-size: -webkit-calc(2.5vw + 7px);
+    font-size: calc(2.5vw + 7px);
   }
   .star-guide-content .blk-three-col .smd-show-more.black a {
     color: #555;
@@ -6402,8 +6404,8 @@ video::-webkit-media-controls-overlay-play-button {
   .blk-history-1 .content .info {
     width: 100%;
     color: #000;
-    font-size: -webkit-calc(2.3vw + 1px);
-    font-size: calc(2.3vw + 1px);
+    font-size: -webkit-calc(2.3vw + 3px);
+    font-size: calc(2.3vw + 3px);
     text-align: justify;
   }
 }
@@ -6805,8 +6807,8 @@ video::-webkit-media-controls-overlay-play-button {
   }
   .star-shop-banner .content .info {
     margin: 0px 0px 3vw;
-    font-size: -webkit-calc(1.7vw + 2px);
-    font-size: calc(1.7vw + 2px);
+    font-size: -webkit-calc(1.7vw + 3px);
+    font-size: calc(1.7vw + 3px);
     width: 70%;
   }
 }

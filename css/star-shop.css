@@ -47,8 +47,8 @@
   }
   .star-shop-banner .content .info {
     margin: 0px 0px 3vw;
-    font-size: -webkit-calc(1.7vw + 2px);
-    font-size: calc(1.7vw + 2px);
+    font-size: -webkit-calc(1.7vw + 3px);
+    font-size: calc(1.7vw + 3px);
     width: 70%;
   }
 }

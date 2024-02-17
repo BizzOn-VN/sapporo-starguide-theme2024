@@ -44,8 +44,8 @@
   .blk-history-1 .content .info {
     width: 100%;
     color: #000;
-    font-size: -webkit-calc(2.3vw + 1px);
-    font-size: calc(2.3vw + 1px);
+    font-size: -webkit-calc(2.3vw + 3px);
+    font-size: calc(2.3vw + 3px);
     text-align: justify;
   }
 }

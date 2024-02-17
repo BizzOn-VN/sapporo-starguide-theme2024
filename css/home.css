@@ -193,7 +193,8 @@
     width: 100%;
   }
   .home-blk2 .gr-slider .slider-star-guid .smd-show-more a {
-    font-size: 3.6vw;
+    font-size: -webkit-calc(3.6vw + 2px);
+    font-size: calc(3.6vw + 2px);
   }
   .home-blk2 .gr-slider .slider-star-guid .smd-show-more a:before {
     width: 1.9vw;
