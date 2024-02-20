@@ -69,7 +69,8 @@ $('.blk-history-2 .slider-desktop').owlCarousel({
     // autoplayHoverPause:true,
     // autoplayHoverPause: true ,
     autoWidth:true,
-    items:4
+    nav:true,
+    dots:false
 })
 
 $( document ).ready(function() {
@@ -86,7 +87,8 @@ $('.blk-history-2 .slider-mb').owlCarousel({
     autoplayTimeout:7000,
     autoplayTimeout:17000,
     autoWidth:true,
-    items:4
+     nav:true,
+    dots:false
 })
 
 

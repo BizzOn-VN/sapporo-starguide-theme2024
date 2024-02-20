@@ -472,6 +472,7 @@
   position: relative;
   display: block;
   padding: 0.7vw 3vw 0.3vw 0;
+  font-family: "SVN-Poppins-Bold";
 }
 .star-guide-content .top-link ul li a.active:before {
   background: #f4aa1c;
