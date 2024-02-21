@@ -15,13 +15,13 @@
   width: 35%;
 }
 .star-shop-banner .content .caption {
-  font-size: 5vw;
-  line-height: 1.2em;
+  font-size: 4.5vw;
+  line-height: 1.1em;
   color: #FFF;
 }
 .star-shop-banner .content .legendarybiru {
-  margin: 0px 0px 2vw;
-  width: 70%;
+  margin: 0px 0px 1.8vw;
+  width: 68%;
 }
 .star-shop-banner .content .legendarybiru img {
   width: 100%;
@@ -30,6 +30,15 @@
   width: 84%;
   text-align: justify;
   margin: 0px 0px 1vw;
+}
+@media screen and (max-width: 992px) {
+  .star-shop-banner .content .caption {
+    font-size: 4vw;
+  }
+  .star-shop-banner .content .info {
+    font-size: -webkit-calc(0.7vw + 3px);
+    font-size: calc(0.7vw + 3px);
+  }
 }
 @media screen and (max-width: 768px) {
   .star-shop-banner .content {
