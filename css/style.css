@@ -6380,7 +6380,18 @@ video::-webkit-media-controls-overlay-play-button {
             background-size: 100% auto;
   }
   .star-guide-content .blk-tan-huong {
-    padding: 1vw 0.5vw 2vw 0.5vw;
+    padding: 1vw 2vw 2vw 2vw;
+  }
+  .star-guide-content .blk-tan-huong ul.nav-tabs {
+    margin: 1vw 0px 4vw;
+  }
+  .star-guide-content .blk-tan-huong ul.nav-tabs li a {
+    font-size: -webkit-calc(2.6vw + 7px);
+    font-size: calc(2.6vw + 7px);
+    padding: 1.8vw 0vw 1.3vw 0vw;
+  }
+  .star-guide-content .blk-tan-huong ul.nav-tabs li a:before {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -6402,6 +6413,12 @@ video::-webkit-media-controls-overlay-play-button {
   }
   .star-guide-content .top-link ul li a:before {
     height: 2px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .star-guide-content .blk-tan-huong ul.nav-tabs li a {
+    font-size: -webkit-calc(2.8vw + 5px);
+    font-size: calc(2.8vw + 5px);
   }
 }
 
