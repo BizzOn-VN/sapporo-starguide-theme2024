@@ -3615,3 +3615,20 @@ video::-webkit-media-controls-overlay-play-button {
     padding-top: 0px !important;
   }
 }
+
+.icon-star-shop {
+  position: fixed;
+  right: 0%;
+  bottom: 5%;
+  z-index: 100;
+  width: 10.7%;
+}
+.icon-star-shop img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .icon-star-shop {
+    width: 26%;
+    bottom: 25%;
+  }
+}

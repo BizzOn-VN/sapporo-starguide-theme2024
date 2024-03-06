@@ -3733,6 +3733,23 @@ video::-webkit-media-controls-overlay-play-button {
   }
 }
 
+.icon-star-shop {
+  position: fixed;
+  right: 0%;
+  bottom: 5%;
+  z-index: 100;
+  width: 10.7%;
+}
+.icon-star-shop img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .icon-star-shop {
+    width: 26%;
+    bottom: 25%;
+  }
+}
+
 /* header
  -----------------------------------------------------*/
 .page-header {
@@ -5232,23 +5249,6 @@ video::-webkit-media-controls-overlay-play-button {
 
 .delivery-icon a {
   display: inline-block;
-}
-
-.icon-star-shop {
-  position: fixed;
-  right: 0%;
-  bottom: 5%;
-  z-index: 100;
-  width: 10.7%;
-}
-.icon-star-shop img {
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .icon-star-shop {
-    width: 26%;
-    bottom: 25%;
-  }
 }
 
 .home-blk-6 {
