@@ -225,6 +225,18 @@
     width: 100%;
     margin: 0px 0px 4vw;
   }
+  .blk-tich-diem .tab-ct-1 .form-tich-diem .item label {
+    padding: 0.2vw 1.5vw 0.8vw 1.5vw;
+    color: #FFF;
+    border-radius: 0.7em;
+    left: 3vw;
+    font-size: -webkit-calc(2.3vw + 3px);
+    font-size: calc(2.3vw + 3px);
+    top: -42%;
+  }
+  .blk-tich-diem .tab-ct-1 .form-tich-diem .item .input-text {
+    padding: 0px 3vw;
+  }
   .blk-tich-diem .tab-ct-1 .bottom-meta {
     font-size: -webkit-calc(2.3vw + 5px);
     font-size: calc(2.3vw + 5px);

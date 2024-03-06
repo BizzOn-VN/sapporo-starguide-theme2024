@@ -4,6 +4,14 @@
   padding: 0.5vw 0 3vw;
   background: #2a2a2a;
 }
+@media screen and (min-width: 768px) {
+  .home-blk-6 .smd-show-more a {
+    font-size: 1.5vw;
+  }
+  .home-blk-6 .smd-show-more a:before {
+    height: 0.9vw;
+  }
+}
 .home-blk-6 .smd-line {
   margin-bottom: 1vw;
 }
@@ -247,7 +255,7 @@
 .blk-select .ui.selection.dropdown .menu > .item {
   text-align: center;
   background: #ffffff;
-  font-size: 18px;
+  font-size: 1.8vw;
 }
 .blk-select .ui.selection.dropdown .menu > .item span {
   white-space: nowrap;
@@ -261,7 +269,7 @@
   right: auto;
 }
 .blk-select .ui.dropdown > .text {
-  font-size: 18px;
+  font-size: 1.8vw;
   display: block;
 }
 .blk-select .ui.dropdown .menu .selected.item span {
@@ -306,8 +314,8 @@
   max-width: 100%;
   display: table;
   margin: 0 auto;
-  padding: 0.7vw 0px 0px 2vw;
-  min-height: 2.5vw;
+  padding: 0.7vw 0px 0px 2.5vw;
+  min-height: 2.7vw;
   border: none;
   border-radius: 6px;
   text-align: left;
@@ -318,7 +326,7 @@
   display: block;
 }
 .blk-select .ui.dropdown:not(.button) > .default.text {
-  font-size: 1.2rem;
+  font-size: 1.8vw;
   color: #464646;
   font-weight: 400;
 }
@@ -332,16 +340,23 @@
   .blk-select .ui.selection.dropdown > .dropdown.icon .menu {
     display: none !important;
   }
+  .blk-select .ui.selection.dropdown .menu > .item {
+    font-size: -webkit-calc(3vw + 10px);
+    font-size: calc(3vw + 10px);
+  }
   .blk-select .ui.selection.dropdown {
-    padding: 2vw 0px 2.5vw 0px;
+    overflow: hidden;
+    padding: 2vw 0px 0vw 0px;
     border-radius: 0px;
-    width: 95%;
+    min-height: 8vw;
   }
   .blk-select .ui.selection.dropdown .menu {
     border-radius: 0px;
   }
   .blk-select .ui.selection.dropdown .text {
     padding-left: 6vw;
+    font-size: -webkit-calc(3vw + 10px);
+    font-size: calc(3vw + 10px);
   }
   .blk-select .ui.selection.dropdown .default.text {
     padding-left: 6vw;
@@ -351,12 +366,29 @@
   .blk-select .ui.dropdown .menu .selected.item span {
     padding: 0px;
   }
+  .blk-select .ui.selection.dropdown .menu {
+    -webkit-animation-duration: 0s !important;
+         -o-animation-duration: 0s !important;
+            animation-duration: 0s !important;
+    max-height: 9.01428571rem;
+    position: initial !important;
+    height: auto !important;
+    margin-top: 3vw;
+    padding: 0.5vw 0px 3vw 0px;
+  }
   .blk-select .ui.selection.dropdown .menu .item {
     text-align: left;
     font-size: 2vw;
     font-size: -webkit-calc(2.5vw + 7px);
     font-size: calc(2.5vw + 7px);
     padding: 1vw 2vw 1vw 6vw !important;
+  }
+  .blk-select .ui.dropdown > .dropdown.icon {
+    height: 100%;
+  }
+  .blk-select .ui.dropdown > .dropdown.icon:before {
+    font-size: -webkit-calc(0.8vw + 8px);
+    font-size: calc(0.8vw + 8px);
   }
 }
 

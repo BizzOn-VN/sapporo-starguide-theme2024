@@ -121,6 +121,7 @@ input[type=submit] {
 .page-header {
   padding: 15px 0px;
   position: relative;
+  background: #FFF;
 }
 .page-header .h-container {
   position: relative;
@@ -217,21 +218,68 @@ input[type=submit] {
 }
 .page-header .meta-right #open-sapporo-nav img {
   width: 100%;
+  display: none;
+}
+.page-header .meta-right #open-sapporo-nav img.active {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .page-header .meta-right #open-sapporo-nav .toggle-menu-icon {
+    display: block;
+  }
+}
+.page-header .meta-right #open-sapporo-nav #close-sapporo-nav {
+  display: none;
+  width: -webkit-calc(3.2vw + 5px);
+  width: calc(3.2vw + 5px);
 }
 @media screen and (max-width: 768px) {
   .page-header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 120;
     padding: 4.5vw 0px;
   }
   .page-header .logo-2 {
     width: 6vw;
   }
+  .page-header .meta-right .icon-cart {
+    width: -webkit-calc(5vw + 10px);
+    width: calc(5vw + 10px);
+    padding-right: 2.3vw;
+  }
   .page-header .meta-right #open-sapporo-nav {
     width: 7vw;
   }
+  .page-header .meta-right #open-sapporo-nav #close-sapporo-nav.active {
+    display: block;
+  }
+  .page-header .meta-right #open-sapporo-nav .close-sapporo-nav.active {
+    display: block;
+  }
   .page-header .meta-right .head-search .icon-search {
-    padding-right: 1.5vw;
-    width: -webkit-calc(2.3vw + 12px);
-    width: calc(2.3vw + 12px);
+    padding-right: 2.3vw;
+    width: -webkit-calc(4vw + 10px);
+    width: calc(4vw + 10px);
+  }
+  .page-header .meta-right .text {
+    padding-right: 3.3vw;
+  }
+  .page-header .meta-right .text span {
+    display: none;
+  }
+  .page-header .meta-right .text a {
+    display: none;
+  }
+  .page-header .meta-right .text .icon {
+    display: block;
+    width: -webkit-calc(3.2vw + 5px);
+    width: calc(3.2vw + 5px);
+  }
+  .page-header .meta-right .text .icon a {
+    display: block;
   }
   .page-header .logo {
     left: 0px;
@@ -321,16 +369,24 @@ input[type=submit] {
   .main-nav {
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 100% !important;
     background: rgba(0, 0, 0, 0.4);
     font-size: -webkit-calc(1.3vw + 7px);
     font-size: calc(1.3vw + 7px);
     z-index: 0;
     visibility: hidden;
+    min-height: 0px !important;
   }
   .main-nav.active-menu {
     z-index: 100;
     visibility: visible;
+  }
+  .main-nav.fixed-menu {
+    z-index: 100;
+    visibility: visible;
+    position: fixed;
+    top: 0px !important;
+    left: 0;
   }
   .main-nav ul.menu {
     display: -webkit-inline-box;
@@ -408,82 +464,6 @@ input[type=submit] {
   .main-nav ul.menu li .sub-menu li a:hover {
     background: rgba(0, 0, 0, 0.6);
   }
-  .main-nav.hl {
-    left: -300px;
-    height: 100%;
-    position: fixed;
-    z-index: 999;
-    overflow-x: hidden;
-    top: 0px;
-    background-image: url(https://www.sapporo-starguide.com/static/images/sapporo/sidebar/bg-navigation.png);
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    min-height: 100vh;
-    width: 300px;
-  }
-  .main-nav.hl .h-container {
-    width: 100%;
-    padding: 0;
-  }
-  .main-nav.hl.active-menu {
-    left: 0px;
-    -webkit-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-  }
-  .main-nav.hl .sidebar-header {
-    display: block !important;
-    padding: 2rem 2rem 1rem 2rem;
-    font-size: 30px;
-    color: #f6a95a;
-  }
-  .main-nav.hl .sidebar-header img {
-    float: left;
-    width: 24px;
-  }
-  .main-nav.hl ul.menu {
-    text-align: left;
-    display: block;
-  }
-  .main-nav.hl ul.menu li {
-    padding: 0;
-  }
-  .main-nav.hl ul.menu li.has-sub {
-    padding: 0.2rem 0rem 0.2rem 0rem;
-  }
-  .main-nav.hl ul.menu li.has-sub:before {
-    display: none;
-  }
-  .main-nav.hl ul.menu li.has-sub a {
-    background: none;
-    padding: 0.4rem 2rem 0.5rem 1rem;
-  }
-  .main-nav.hl ul.menu li a {
-    font-size: 20px;
-    line-height: 20px;
-    color: #df8b36;
-  }
-  .main-nav.hl ul.menu li a:hover {
-    background: #313131 !important;
-  }
-  .main-nav.hl ul.menu li .sub-menu {
-    background: none;
-    padding: 1vw 0px 0px;
-  }
-  .main-nav.hl ul.menu .sub-menu {
-    display: block;
-    position: relative;
-    padding: 1rem 0px 0px;
-  }
-  .main-nav.hl ul.menu .sub-menu li {
-    padding: 0.2rem 0 0.2rem 0;
-  }
-  .main-nav.hl ul.menu .sub-menu li a {
-    color: #FFF;
-    padding: 0.5rem 1rem 0.5rem 2.5rem;
-  }
 }
 @media screen and (max-width: 1024px) {
   .main-nav {
@@ -493,22 +473,19 @@ input[type=submit] {
 }
 @media screen and (max-width: 768px) {
   .main-nav {
-    left: -300px;
+    right: -300px;
     height: 100%;
     position: fixed;
     z-index: 999;
     overflow-x: hidden;
-    top: 0px;
-    background-image: url(https://www.sapporo-starguide.com/static/images/sapporo/sidebar/bg-navigation.png);
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    top: 50px;
+    padding: 2vw 0px 0px 0px;
+    background: rgba(0, 0, 0, 0.8);
     min-height: 100vh;
     width: 300px;
   }
   .main-nav.active-menu {
-    left: 0px;
+    right: 0px;
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
@@ -524,6 +501,28 @@ input[type=submit] {
   }
   .main-nav .menu {
     text-align: left;
+  }
+  .main-nav .menu .has-sub a {
+    position: relative;
+  }
+  .main-nav .menu .has-sub a:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: -webkit-calc(0.1vw + 3px) solid transparent;
+    border-left: calc(0.1vw + 3px) solid transparent;
+    border-right: -webkit-calc(0.1vw + 3px) solid transparent;
+    border-right: calc(0.1vw + 3px) solid transparent;
+    border-top: -webkit-calc(0.1vw + 3px) solid #FFF;
+    border-top: calc(0.1vw + 3px) solid #FFF;
+    display: block;
+    position: absolute;
+    right: -2.5vw;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .main-nav .menu li {
     padding: 0.5rem 2rem 0.5rem 2rem;
@@ -541,6 +540,17 @@ input[type=submit] {
   }
   .main-nav .menu .sub-menu li a {
     color: #FFF;
+  }
+  .main-nav .menu .sub-menu li a:before {
+    display: none;
+  }
+  .main-nav .icon-star-shop-mb {
+    margin: 5vw 0px 0px;
+    float: right;
+    width: 40%;
+  }
+  .main-nav .icon-star-shop-mb img {
+    width: 100%;
   }
 }
 
@@ -567,7 +577,7 @@ input[type=submit] {
 }
 @media screen and (max-width: 768px) {
   .h-container {
-    width: 92%;
+    width: 95%;
     padding-right: 0px;
     padding-left: 0px;
   }
@@ -752,7 +762,8 @@ input[type=submit] {
 }
 @media screen and (max-width: 768px) {
   .smd-more a {
-    font-size: 4vw;
+    font-size: 6.5vw;
+    padding: 0.1vw 2.2vw 0.6vw 2.2vw;
   }
 }
 
@@ -782,10 +793,10 @@ input[type=submit] {
 }
 
 .smd-show-more.black a {
-  color: #000;
+  color: #555555;
 }
 .smd-show-more.black a:before {
-  background: url(../images/arrow-right-black.png) no-repeat center center;
+  background: url(../images/arrow-right-gray.png) no-repeat center center;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
 }
@@ -3597,4 +3608,10 @@ video::-webkit-media-controls-overlay-play-button {
 
 .color-yellow {
   color: #f7ba45;
+}
+
+@media screen and (min-width: 768px) {
+  .page-main {
+    padding-top: 0px !important;
+  }
 }

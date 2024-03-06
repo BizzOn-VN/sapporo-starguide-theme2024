@@ -269,6 +269,9 @@
 
 .blk-history-4 .slider-introduce {
   margin: 0;
+  background: url(../images/history/bg-blk-4.jpg) no-repeat top left #ffffff;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
 }
 .blk-history-4 .slider-introduce .item {
   display: -webkit-box;
@@ -283,9 +286,6 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url(../images/history/bg-blk-4.jpg) no-repeat top left #ffffff;
-  -webkit-background-size: auto 100%;
-          background-size: auto 100%;
   padding: 4vw -webkit-calc(14.5% + 15px) 4vw -webkit-calc(14.5% + 15px);
   padding: 4vw calc(14.5% + 15px) 4vw calc(14.5% + 15px);
 }

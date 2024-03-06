@@ -42,9 +42,13 @@ $(document).mouseup(function(e){
 
 $(".page-header .meta-right #open-sapporo-nav").click(function(){
 	if($(".main-nav").hasClass("active-menu")){
-		$(".main-nav").removeClass('active-menu')
+		$(".main-nav").removeClass('active-menu');
+        $(".toggle-menu-icon").addClass("active");
+        $("#close-sapporo-nav").removeClass("active");
 	}else{
 		$(".main-nav").addClass('active-menu')
+        $(".toggle-menu-icon").removeClass("active");
+        $("#close-sapporo-nav").addClass("active");
 	}
 	
 })

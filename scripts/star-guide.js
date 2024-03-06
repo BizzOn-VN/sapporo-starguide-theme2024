@@ -125,5 +125,8 @@ $( ".video-star-tv" ).each(function( index ) {
          scrollTop: $(".video-star-tv.active-video").offset().top
      }, 'slow');
 })
-     
+$(".star-guide-content .top-link ul li a").click(function(){
+    $(".star-guide-content .top-link ul li a").removeClass("active");
+    $(this).addClass("active")
+})  
         
