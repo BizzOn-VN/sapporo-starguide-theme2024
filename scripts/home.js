@@ -267,5 +267,10 @@ $( ".video-star-tv" ).each(function( index ) {
          scrollTop: $(".video-star-tv.active-video").offset().top
      }, 'slow');
 })
-     
+$('.info-gift .item').hover(function(){
+        $(".info-gift .item .info").removeClass("active");
+        $(this).children(".info").addClass("active");
+    },function(){
+        $(".info-gift .item .info").removeClass("active");
+});     
                 
